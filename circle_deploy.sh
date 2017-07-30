@@ -1,11 +1,11 @@
-ssh $DROPLET_USER@DROPLET_IP 'docker stop alext'
-ssh $DROPLET_USER@DROPLET_IP 'docker rm alext'
+ssh $DROPLET_USER@$DROPLET_IP 'docker stop alext'
+ssh $DROPLET_USER@$DROPLET_IP 'docker rm alext'
 
-ssh $DROPLET_USER@DROPLET_IP 'docker rm alext'
+ssh $DROPLET_USER@$DROPLET_IP 'docker rm alext'
 
 
 echo "pulling image"
-ssh $DROPLET_USER@DROPLET_IP 'docker pull danweaver06/alext:latest'
+ssh $DROPLET_USER@$DROPLET_IP 'docker pull danweaver06/alext:latest'
 
 
 echo "starting new container"
