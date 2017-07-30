@@ -8,13 +8,13 @@ dependencies:
   pre:
     - npm install -g npm
   override:
-    - npm update
-    - docker info
-    - npm -v
-    - node -v
-    - npm install gatsby -g
-    - npm install
-    - npm run build
+    # - npm update
+    # - docker info
+    # - npm -v
+    # - node -v
+    # - npm install gatsby -g
+    # - npm install
+    # - npm run build
     - docker build -t alext .
     - docker tag alext danweaver06/alext
     - docker login -e danweaver06@gmail.com -u $DOCKER_USER -p $DOCKER_PASSWORD

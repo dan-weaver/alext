@@ -9,7 +9,7 @@ ssh $DROPLET_USER@$DROPLET_IP 'docker pull danweaver06/alext:latest'
 
 
 echo "starting new container"
-ssh $DEPLOY_USER@$DEPLOY_HOST 'docker run -d --restart=always --name alext -p 80:80 danweaver06/alext:latest'
+ssh $DROPLET_USER@$DROPLET_IP 'docker run -d --restart=always --name alext -p 80:80 danweaver06/alext:latest'
 
 echo "Success"
 exit 0
