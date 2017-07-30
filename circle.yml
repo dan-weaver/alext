@@ -1,0 +1,27 @@
+machine:
+  node:
+    version: 8.0.0
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - npm install
+    - npm run build
+    - docker login -p $DOCKER_PASSWORD -u $DOCKER_USER
+    - docker build -t alext .
+    - docker tag alext danweaver06/alext
+    - docker push danweaver06/alext
+
+test:
+  override:
+    - docker run -p 4567:4567 -d alext; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:4567/
+
+deploy:
+  master:
+    branch: master
+    commands:
+      - echo 'deploying master branch to droplet'
+      - ssh $DROPLET_USER@$DROPLET_IP "docker login"
