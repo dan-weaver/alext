@@ -9,6 +9,7 @@ dependencies:
     - docker info
     - npm -v
     - node -v
+    - npm install gatsby -g
     - npm install
     - npm run build
     - docker login -p $DOCKER_PASSWORD -u $DOCKER_USER
