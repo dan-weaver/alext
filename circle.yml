@@ -1,13 +1,14 @@
 machine:
   node:
     version: 8.0.0
-  npm:
-    version: 5.3.0
   services:
     - docker
 
 dependencies:
+  pre:
+    - npm install -g npm
   override:
+    - npm update
     - docker info
     - npm -v
     - node -v
