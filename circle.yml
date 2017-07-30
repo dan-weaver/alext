@@ -15,7 +15,6 @@ dependencies:
     - npm install gatsby -g
     - npm install
     - npm run build
-    - docker login -p $DOCKER_PASSWORD -u $DOCKER_USER
     - docker build -t alext .
     - docker tag alext danweaver06/alext
     - docker push danweaver06/alext
