@@ -17,6 +17,7 @@ dependencies:
     - npm run build
     - docker build -t alext .
     - docker tag alext danweaver06/alext
+    - docker login -e danweaver06@gmail.com -u $DOCKER_USER -p $DOCKER_PASSWORD
     - docker push danweaver06/alext
 
 test:
@@ -29,4 +30,4 @@ deploy:
     branch: master
     commands:
       - echo 'deploying master branch to droplet'
-      - ssh $DROPLET_USER@$DROPLET_IP "docker login"
+      - ./circle_deploy.sh
