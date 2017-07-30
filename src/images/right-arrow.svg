@@ -1,0 +1,5 @@
+<svg width="30px" height="14px" xmlns="http://www.w3.org/2000/svg">
+    <line x1="20" y1="0" x2="30" y2="7" style="fill:none; stroke:#29aae1;stroke-width:2"></line>
+    <line x1="8" y1="7" x2="28" y2="7" style="fill:none; stroke:#29aae1;stroke-width:2"></line>
+    <line x1="20" y1="14" x2="30" y2="7" style="fill:none; stroke:#29aae1;stroke-width:2"></line>
+</svg>
