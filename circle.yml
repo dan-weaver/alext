@@ -30,5 +30,6 @@ deployment:
   master:
     branch: master
     commands:
+      - chmod a+x ./circle_deploy.sh
       - echo 'deploying master branch to droplet'
       - ./circle_deploy.sh
