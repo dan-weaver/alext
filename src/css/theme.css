@@ -150,12 +150,22 @@ body {
     padding-top: 100px;
 }
 
+.header-container {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000000;
+}
+
+
+header.default.scroll ~ div.contribute-header {
+  transform: translateY(-40px)
+}
 header.default {
     width: 100%;
     height: 100px;
     background: #1b3c6c;
-    position: fixed;
-    top: 0;
     z-index: 100;
     overflow: hidden;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
@@ -321,8 +331,6 @@ header.mobile {
     width: 100%;
     height: 60px;
     background: #1b3c6c;
-    position: fixed;
-    top: 0;
     z-index: 100;
     overflow: hidden;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
@@ -1146,6 +1154,11 @@ Forms
     background: #ec2027;
 }
 
+
+.bg-red {
+  background-color: #ec2027 !important;
+}
+
 label {
     display: block;
 }
@@ -1264,7 +1277,7 @@ textarea.error {
 /*================================================================================
 Media Queries
 ================================================================================*/
-@media screen and  (max-width: 1400px) {
+@media screen and  (max-width: 980px) {
     .default .nav .contribute {
         display: none;
     }
@@ -1649,9 +1662,42 @@ Media Queries
   background-color: #29aae1;
 }
 
+.alext-blue {
+  color: #29aae1;
+}
+
+.bg-alext-blue {
+  background-color: #29aae1;
+}
+
 .issue-button-red {
   background-color: rgb(236, 32, 39);
 }
 .hover-issue-red:hover {
   background-color: rgb(236, 32, 39);
+}
+.policyBlock:hover * {
+  color: #FFF;
+}
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  zIndex: 1;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
 }

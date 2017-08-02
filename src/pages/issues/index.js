@@ -4,9 +4,9 @@ import Link from "gatsby-link"
 const IssueCard = ({ issue }) => {
   const classString = "policyBlock " + issue.cardSize + " " + issue.cardOrientation;
 
-  return (<div className={classString} onclick="location.href='Issues/economy.html'">
-  <Link to={`/issues/${issue.link}`}>
-    <span>{issue.cardTitle}</span>
+  return (<div className={classString + ' relative'} onclick="location.href='Issues/economy.html'">
+    <Link className="absolute top-0 right-0 left-0 bottom-0" to={`/issues/${issue.link}`}></Link>
+    <span className="alext-blue fw7 f4 underline-hover">{issue.cardTitle}</span>
     <br />
     <br />
     <p>{issue.cardContent}</p>
@@ -18,7 +18,6 @@ const IssueCard = ({ issue }) => {
         <line x1="20" y1="14" x2="30" y2="7" />
       </svg>
     </div>
-    </Link>
   </div>);
 }
 
@@ -37,15 +36,7 @@ export default class Issues extends React.Component {
             <br />
             <br />
             <p style={{ fontWeight: 300 }}>
-              We are proud to be a campaign of ideas and to be building a vision
-              to create a stronger and healthier community in Texas’s 7th
-              Congressional District. We hope you’ll read Alex’s policy ideas
-              and values for the Houston region, but we also want to build this
-              vision collaboratively with you. That’s why we’re conducting a
-              Listening Tour to make sure we are getting input from community
-              members about these ideas and other issues throughout our
-              campaign. We also want to hear your thoughts at
-              ideas@alextfortexas.com. Thanks for your input and feedback!
+              {this.props.data.issueInfo.mainContent.mainContent}
             </p>
           </div>
         </section>

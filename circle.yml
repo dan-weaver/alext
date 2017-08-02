@@ -6,25 +6,25 @@ machine:
 
 dependencies:
   pre:
-    # - npm install -g npm
+    - npm install -g npm
   override:
-    # - npm update
-    # - docker info
-    # - npm -v
-    # - node -v
-    # - npm install gatsby -g
-    # - npm install
-    # - npm run build
-    # - docker build -t alext .
-    # - docker tag alext danweaver06/alext
-    # - docker login -e danweaver06@gmail.com -u $DOCKER_USER -p $DOCKER_PASSWORD
-    # - docker push danweaver06/alext
+    - npm update
+    - docker info
+    - npm -v
+    - node -v
+    - npm install gatsby -g
+    - npm install
+    - npm run build
+    - docker build -t alext .
+    - docker tag alext danweaver06/alext
+    - docker login -e danweaver06@gmail.com -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - docker push danweaver06/alext
 
 test:
   override:
     - echo 'test'
-    # - docker run -p 80:80 -d alext; sleep 10
-    # - curl --retry 10 --retry-delay 5 -v http://localhost:80/
+    - docker run -p 80:80 -d alext; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:80/
 
 deployment:
   master:

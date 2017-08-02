@@ -11,6 +11,22 @@ export default class Template extends React.Component {
     children: PropTypes.func
   };
 
+  componentDidMount() {
+    $(window).scroll(function () {
+        var scrollBanner = $('section.banner').height() + 40;
+        if ($(document).scrollTop() > scrollBanner) {
+            $('header.default').addClass('scroll');
+        } else {
+            $('header.default').removeClass('scroll');
+        }
+    });
+
+    try {
+      Typekit.load({async: true});
+    } catch (e) {
+    }
+  }
+
   render() {
     return (
       <div>
@@ -21,6 +37,7 @@ export default class Template extends React.Component {
             { name: "keywords", content: "sample, something" }
           ]}
         />
+      <div className="header-container">
         <header className="default">
           <Link to={"/"} className="logo-white" />
           <Link to={"/"} className="logo-white-small" />
@@ -124,6 +141,12 @@ export default class Template extends React.Component {
             </li>
           </ul>
         </header>
+        <div style={{zIndex:50000}} className="dn-l contribute-header">
+          <a style={{cursor: 'pointer'}} className="bg-red pa3 db br0 w-100 v-mid w-100 tc white hover-white">
+            CONTRIBUTE
+          </a>
+        </div>
+      </div>
         {this.props.children()}
       </div>
     );
