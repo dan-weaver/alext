@@ -54,8 +54,12 @@ export default class HTML extends React.Component {
             name="description"
             content="The son of a fourth-generation Texan mother and Greek immigrant father, Alex was born and raised in Houston, where he is an active member of the community. Alex is running for Congress in Texas Congressional District 7 and is focused on working hard, being accountable, and partnering with constituents to achieve our vision together."
           />
-          <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
+          <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
           <script src='https://use.typekit.net/bcw4pdn.js'></script>
+          <script
+            type="text/javascript"
+             src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"
+           />
           <meta name="robots" content="noodp" />
           <link rel="canonical" href="http://www.alextfortexas.com/" />
           <meta property="og:locale" content="en_US" />

@@ -2,19 +2,8 @@ import React from "react";
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-var loadJS = function(url){
-    //url is URL of external file, implementationCode is the code
-    //to be called from the file, location is the location to
-    //insert the <script> element
-    var scriptTag = document.createElement('script');
-    scriptTag.src = url;
-    document.body.appendChild(scriptTag);
-};
 
 export default class Index extends React.Component {
-  componentDidMount() {
-    loadJS('http://d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js');
-  }
   render() {
     const { about: { about }, quote: { quote } } = this.props.data.basic
     return (
