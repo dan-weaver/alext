@@ -101,14 +101,11 @@ export default class HTML extends React.Component {
           />
         </head>
         <body>
-
         <div
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: this.props.body }}
         />
         {this.props.postBodyComponents}
-
-          <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=1.9.1'></script>
           <script src='https://use.typekit.net/bcw4pdn.js'></script>
           <script
             type="text/javascript"
