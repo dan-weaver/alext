@@ -13,6 +13,7 @@ export default class Template extends React.Component {
   };
 
   componentDidMount() {
+
     $(window).scroll(function () {
         var scrollBanner = $('section.banner').height() + 40;
         if ($(document).scrollTop() > scrollBanner) {
@@ -25,6 +26,7 @@ export default class Template extends React.Component {
     try {
       Typekit.load({async: true});
     } catch (e) {
+      console.log('cant load typekit');
     }
   }
 
