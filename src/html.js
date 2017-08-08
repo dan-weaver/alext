@@ -101,18 +101,26 @@ export default class HTML extends React.Component {
           />
         </head>
         <body>
-        <div
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: this.props.body }}
-        />
-        {this.props.postBodyComponents}
-          <script src='https://use.typekit.net/bcw4pdn.js'></script>
+          <div
+            id="___gatsby"
+            dangerouslySetInnerHTML={{ __html: this.props.body }}
+          />
+          {this.props.postBodyComponents}
+          <script src="https://use.typekit.net/bcw4pdn.js" />
           <script
             type="text/javascript"
-             src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"
-           />
+            src="//d1aqhv4sn5kxtx.cloudfront.net/actiontag/at.js"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `try {
+                Typekit.load({ async: true });
+              } catch (e) {
+                console.log(e.message + "cant load typekit");
+              }`
+            }}
+          />
         </body>
-
       </html>
     );
   }
