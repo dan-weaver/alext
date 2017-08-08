@@ -1,9 +1,30 @@
 import React from "react";
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
+import $ from 'jquery';
 
+var signupForm, getInvolvedForm;
 
 export default class Index extends React.Component {
+  componentDidMount() {
+    var $signupHolder = $('.ngp-signup-holder');
+    var $getInvolvedHolder = $('.ngp-get-involved-holder');
+
+    if (!signupForm) {
+      signupForm = $signupHolder.find('.ngp-form');
+      getInvolvedForm = $getInvolvedHolder.find('.ngp-form');
+    }
+
+    signupForm.detach();
+    getInvolvedForm.detach();
+
+    $('.ngp-signup-display').append(signupForm);
+    $('.ngp-get-involved-display').append(getInvolvedForm)
+  }
+  componentWillUnmount() {
+    signupForm.detach();
+    getInvolvedForm.detach();
+  }
   render() {
     const { about: { about }, quote: { quote } } = this.props.data.basic
     return (
@@ -30,13 +51,8 @@ export default class Index extends React.Component {
                 novalidate="novalidate"
               >
                 <div className="image" />
-                <div
-                  className="ngp-form quick-signup"
-                  data-labels="inline"
-                  data-id="-8884102406176503296"
-                  data-resource-path="/"
-                  data-template="minimal"
-                />
+                <div className="ngp-signup-display">
+                </div>
               </div>
             </div>
           </div>
@@ -85,12 +101,7 @@ export default class Index extends React.Component {
             <div className="side">
               <h2 className="title">Get Involved</h2>
             </div>
-            <div className="main">
-              <div
-                className="ngp-form get-involved"
-                data-id="-7731180901569656320"
-                data-labels="inline"
-              />
+            <div className="main ngp-get-involved-display">
             </div>
           </div>
         </section>
