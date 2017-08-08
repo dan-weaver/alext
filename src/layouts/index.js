@@ -40,7 +40,7 @@ export default class Template extends React.Component {
             { name: "keywords", content: "sample, something" }
           ]}
         />
-        <div className="ngp-signup-holder">
+      <div style={{display:'none'}} className="ngp-signup-holder">
           <div
             className="ngp-form quick-signup ngp-signup-form"
             data-labels="inline"
@@ -49,7 +49,7 @@ export default class Template extends React.Component {
             data-template="minimal"
           />
         </div>
-        <div className="ngp-get-involved-holder">
+        <div style={{display:'none'}} className="ngp-get-involved-holder">
           <div
             className="ngp-form get-involved ngp-get-involved-form"
             data-id="-7731180901569656320"
