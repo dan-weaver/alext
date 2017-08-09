@@ -15,15 +15,15 @@ export default class Index extends React.Component {
       getInvolvedForm = $getInvolvedHolder.find('.ngp-form');
     }
 
-    signupForm.detach();
-    getInvolvedForm.detach();
+    var newsignupForm = signupForm.clone();
+    var newgetInvolvedForm = getInvolvedForm.clone();
 
-    $('.ngp-signup-display').append(signupForm);
-    $('.ngp-get-involved-display').append(getInvolvedForm)
+    $('.ngp-signup-display').append(newsignupForm);
+    $('.ngp-get-involved-display').append(newgetInvolvedForm);
   }
   componentWillUnmount() {
-    signupForm.detach();
-    getInvolvedForm.detach();
+    $('.ngp-signup-display').find('.ngp-form').detach();
+    $('.ngp-signup-display').find('.ngp-form').detach();
   }
   render() {
     const { about: { about }, quote: { quote } } = this.props.data.basic
@@ -48,7 +48,6 @@ export default class Index extends React.Component {
                 className="old-form wpcf7-form"
                 action="http://alex.lovettcommercial.com/saveSignUp.ashx"
                 method="post"
-                novalidate="novalidate"
               >
                 <div className="image" />
                 <div className="ngp-signup-display">
@@ -146,7 +145,7 @@ export default class Index extends React.Component {
                       width="30"
                       height="30"
                       viewBox="-9 11 30 30"
-                      enable-background="new -9 11 30 30"
+                      enableBackground="new -9 11 30 30"
                     >
                       <g fill="#fff">
                         <path d="m2 36.2c8.8 0 13.6-7.3 13.6-13.6 0-.2 0-.4 0-.6.9-.7 1.7-1.5 2.4-2.5-.9.4-1.8.6-2.7.8 1-.6 1.7-1.5 2.1-2.6-.9.5-1.9.9-3 1.2-.9-.9-2.1-1.5-3.5-1.5-2.6 0-4.8 2.1-4.8 4.8 0 .4 0 .7.1 1.1-4-.2-7.5-2.1-9.9-5-.4.5-.6 1.3-.6 2.2 0 1.7.8 3.1 2.1 4-.8 0-1.5-.2-2.2-.6 0 0 0 0 0 .1 0 2.3 1.6 4.3 3.8 4.7-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.5 3.3-1.6 1.3-3.7 2-5.9 2-.4 0-.8 0-1.1-.1 2.1 1.4 4.6 2.2 7.3 2.2" />
@@ -164,7 +163,7 @@ export default class Index extends React.Component {
                       width="30"
                       height="30"
                       viewBox="-9 11 30 30"
-                      enable-background="new -9 11 30 30"
+                      enableBackground="new -9 11 30 30"
                     >
                       <g fill="#fff">
                         <path d="m7.5 36.5v-9.6h3.2l.5-3.8h-3.7v-2.4c0-1.1.3-1.8 1.9-1.8h2v-3.4c-.3 0-1.5-.1-2.9-.1-2.9 0-4.8 1.8-4.8 5v2.8h-3.2v3.8h3.2v9.6l3.8-.1" />
@@ -182,7 +181,7 @@ export default class Index extends React.Component {
                       width="30"
                       height="30"
                       viewBox="-9 11 30 30"
-                      enable-background="new -9 11 30 30"
+                      enableBackground="new -9 11 30 30"
                     >
                       <g fill="#fff">
                         <path d="m6 16.4c3.1 0 3.5 0 4.7.1 1.1.1 1.8.2 2.2.4.5.2.9.5 1.3.9s.7.8.9 1.3c.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.7s0 3.5-.1 4.7c-.1 1.1-.2 1.8-.4 2.2-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.7.1s-3.5 0-4.7-.1c-1.1-.1-1.8-.2-2.2-.4-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1-.4-2.2-.1-1.2-.1-1.6-.1-4.7s0-3.5.1-4.7c.1-1.1.2-1.8.4-2.2.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.7-.1m0-2.1c-3.2 0-3.6 0-4.8.1-1.2.1-2.1.3-2.8.5-.8.3-1.4.7-2.1 1.4-.7.7-1.1 1.3-1.4 2.1-.3.7-.5 1.6-.5 2.8-.1 1.2-.1 1.6-.1 4.8s0 3.6.1 4.8c.1 1.2.3 2.1.5 2.8.3.8.7 1.4 1.4 2.1.7.7 1.3 1.1 2.1 1.4.7.3 1.6.5 2.8.5 1.2.1 1.6.1 4.8.1 3.2 0 3.6 0 4.8-.1 1.2-.1 2.1-.3 2.8-.5.8-.3 1.4-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.7.5-1.6.5-2.8.1-1.2.1-1.6.1-4.8s0-3.6-.1-4.8-.3-2.1-.5-2.8c-.3-.8-.7-1.4-1.4-2.1-.7-.7-1.3-1.1-2.1-1.4-.7-.3-1.6-.5-2.8-.5-1.2-.1-1.6-.1-4.8-.1z" />
