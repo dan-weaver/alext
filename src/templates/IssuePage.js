@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
-import leftArrow from "../images/left-arrow.svg";
-import rightArrow from "../images/right-arrow.svg";
+// import leftArrow from "../images/left-arrow.svg";
+// import rightArrow from "../images/right-arrow.svg";
 
 const IssueSection = ({ section }) => {
   return (
@@ -59,12 +59,10 @@ export default class Issue extends React.Component {
           <div className="container">
             <div className="clickArrow">
               <Link className="db fl white hover-white fw2" to={`/issues`}>
-                <img src={leftArrow} />
                 Back to Issues
               </Link>
               <Link className="db fr white hover-white fw2" to={`/issues/${nextIssue.link}`}>
                 Go to Next Policy
-                <img src={rightArrow} />
               </Link>
             </div>
             <IssueButtons issues={issues} />
