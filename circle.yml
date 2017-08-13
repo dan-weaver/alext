@@ -13,6 +13,7 @@ dependencies:
     - npm -v
     - node -v
     - npm install gatsby -g
+    - gatsby --version
     - npm install
     - npm run build
     - docker build -t alext .
