@@ -29,6 +29,7 @@ const IssueButtons = ({ issues }) => {
             activeClassName="issue-button-red"
             to={`/issues/${issue.link}`}
           >
+            
             {issue.pageTitle}
           </Link>
         );
