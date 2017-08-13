@@ -26,8 +26,8 @@ export default class HTML extends React.Component {
         class="wf-proximanova-n6-active wf-proximanova-i6-active wf-clarendontextpro-i4-active wf-active"
       >
         <head>
-          {this.props.headComponents}
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+          {this.props.headComponents}
           <meta name="viewport" content="width=device-width" />
           <meta
             name="description"
