@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
-// import leftArrow from "../images/left-arrow.svg";
-// import rightArrow from "../images/right-arrow.svg";
+import leftArrow from "../images/left-arrow.svg";
+import rightArrow from "../images/right-arrow.svg";
 
 const IssueSection = ({ section }) => {
   return (
