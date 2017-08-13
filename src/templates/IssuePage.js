@@ -39,7 +39,37 @@ const IssueButtons = ({ issues }) => {
 
 export default class Issue extends React.Component {
   render() {
-    return <div>test</div>
+    const issue = this.props.data.issue;
+    const issues = this.props.data.issueInfo.issues;
+
+    const nextIssue = getNextIssue(issues, issue);
+
+    return (
+      <div>
+        <section className="policiesBlock">
+          <div className="container">
+            <p className="title">
+              {issue.pageTitle}
+            </p>
+            {issue.section &&
+              issue.section.map(s => <IssueSection section={s} />)}
+          </div>
+        </section>
+        <section className="policyRouter">
+          <div className="container">
+            <div className="clickArrow">
+              <Link className="db fl white hover-white fw2" to={`/issues`}>
+                Back to Issues
+              </Link>
+              <Link className="db fr white hover-white fw2" to={`/issues/${nextIssue.link}`}>
+                Go to Next Policy
+              </Link>
+            </div>
+            <IssueButtons issues={issues} />
+          </div>
+        </section>
+      </div>
+    );
   }
 }
 
