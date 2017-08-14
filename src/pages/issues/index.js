@@ -31,8 +31,16 @@ const IssueCard = ({ issue }) => {
         <br />
         <br />
         <p>{issue.cardContent}</p>
-        <div>
+        <div className="absolute bottom-2" style={{cursor: `pointer`}}>
           READ MORE
+
+          <div className="arrow-link dib">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <line x1="20" y1="0" x2="30" y2="7"></line>
+                <line x1="8" y1="7" x2="28" y2="7"></line>
+                <line x1="20" y1="14" x2="30" y2="7"></line>
+              </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -44,6 +52,7 @@ export default class Issues extends React.Component {
     const issues = this.props.data.issueInfo.issues;
     return (
       <div>
+
         <section className="policies">
           <div className="container">
             <p className="title">Issues</p>

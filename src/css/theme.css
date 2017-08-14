@@ -1686,3 +1686,20 @@ Media Queries
 .issue-card:hover .issue-card-content {
   color: #FFF;
 }
+
+.issue-card svg {
+  width: 30px;
+  height: 14px;
+  color: blue;
+}
+
+.arro-link svg {
+    width: 30px;
+    height: 14px;
+}
+
+.arrow-link line {
+  fill: none;
+    stroke: #29aae1;
+    stroke-width: 2;
+}
