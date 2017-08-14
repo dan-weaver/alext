@@ -869,46 +869,11 @@ section.banner .gradient {
     cursor: pointer;
 }
 
-.policyBlock.horizontal.large {
-    width: calc( 66.66% - 10px );
-}
-
-.policyBlock.vertical.large {
-    min-height: 303px;
-}
-
 
 .policyBlock:hover {
     background-color: #29aae1;
 }
 
-.policyBlock:first-child {
-    width: calc( 66.66% - 10px );
-    margin-left: 0;
-}
-
-.policyBlock:nth-child(3) {
-    margin-left: 0;
-}
-
-.policyBlock:nth-child(4) {
-    width: calc( 33.33% - 20px );
-}
-
-
-.policyBlock:nth-child(6) {
-    margin-left: 0;
-}
-.policyBlock:nth-child(6) p {
-    min-height: 303px;
-}
-
-.policyBlock:nth-child(7) {
-    width: calc( 66.6% - 10px );
-}
-.policyBlock:nth-child(8) {
-    width: calc( 33.33% - 20px );
-}
 
 .policyBlock span:first-child {
     padding: 5px 0;
@@ -1007,6 +972,9 @@ section.banner .gradient {
     background-color: #ec2027;
 }
 
+.policyBlock:hover * {
+  color: #FFF;
+}
 /* Policies
 --------------------------------------------------*/
 
@@ -1666,6 +1634,14 @@ Media Queries
   color: #29aae1;
 }
 
+.hover-alext-blue:hover {
+  color: #29aae1;
+}
+
+.hover-bg-alext-blue:hover {
+  background-color: #29aae1;
+}
+
 .bg-alext-blue {
   background-color: #29aae1;
 }
@@ -1675,9 +1651,6 @@ Media Queries
 }
 .hover-issue-red:hover {
   background-color: rgb(236, 32, 39);
-}
-.policyBlock:hover * {
-  color: #FFF;
 }
 
 .headroom {
@@ -1700,4 +1673,16 @@ Media Queries
 .headroom--pinned {
   position: fixed;
   transform: translateY(0%);
+}
+
+.issue-card .issue-card-content h2 {
+  color: #29aae1;
+}
+
+.issue-card:hover .issue-card-content h2 {
+  color: #FFF;
+}
+
+.issue-card:hover .issue-card-content {
+  color: #FFF;
 }

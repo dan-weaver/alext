@@ -1,25 +1,43 @@
 import React from "react";
-import Link from "gatsby-link"
+import Link from "gatsby-link";
 
 const IssueCard = ({ issue }) => {
-  const classString = "policyBlock " + issue.cardSize + " " + issue.cardOrientation;
+  const type = issue.cardType || "normal";
 
-  return (<div className={classString + ' relative'} onclick="location.href='Issues/economy.html'">
-    <Link className="absolute top-0 right-0 left-0 bottom-0" to={`/issues/${issue.link}`}></Link>
-    <span className="alext-blue fw7 f4 underline-hover">{issue.cardTitle}</span>
-    <br />
-    <br />
-    <p>{issue.cardContent}</p>
-    <div className="policy__read-more">
-      READ MORE
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <line x1="20" y1="0" x2="30" y2="7" />
-        <line x1="8" y1="7" x2="28" y2="7" />
-        <line x1="20" y1="14" x2="30" y2="7" />
-      </svg>
+  const classMap = {
+    normal: "w-third-l",
+    horizontal: "w-two-thirds-l"
+  };
+
+  return (
+    <div
+      style={{ height: 200 }}
+      className={`
+        relative fl pa2 w-50-l w-100-m ${classMap[type]} gray
+        issue-card
+      `}
+      onclick="location.href='Issues/economy.html'"
+    >
+      <div
+        className={`bg-light-gray hover-bg-alext-blue pa3 br2 h-100 issue-card-content`}
+      >
+        <Link
+          className="absolute top-0 right-0 left-0 bottom-0"
+          to={`/issues/${issue.link}`}
+        />
+        <h2 className="b">
+          {issue.cardTitle}
+        </h2>
+        <br />
+        <br />
+        <p>{issue.cardContent}</p>
+        <div>
+          READ MORE
+        </div>
+      </div>
     </div>
-  </div>);
-}
+  );
+};
 
 export default class Issues extends React.Component {
   render() {
@@ -41,10 +59,8 @@ export default class Issues extends React.Component {
           </div>
         </section>
         <section className="policiesBlock">
-          <div className="container">
-            {issues.map(issue =>
-              <IssueCard issue={issue} />
-            )}
+          <div className="mw8 center cf">
+            {issues.map(issue => <IssueCard issue={issue} />)}
           </div>
         </section>
         <footer>
@@ -141,6 +157,7 @@ export default class Issues extends React.Component {
     );
   }
 }
+
 export const pageQuery = graphql`
   query IssuesQuery {
     issueInfo: contentfulIssueInfo {
@@ -151,8 +168,7 @@ export const pageQuery = graphql`
         cardContent
         buttonTitle
         cardTitle
-        cardSize
-        cardOrientation
+        cardType
         link
       }
     }

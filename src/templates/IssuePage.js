@@ -6,7 +6,9 @@ import rightArrow from "../images/right-arrow.svg";
 const IssueSection = ({ section }) => {
   return (
     <div className="policyDetail">
-      <div className="policyLeft">
+      <div
+        className="policyLeft"
+        >
         {section.sectionTitle}
       </div>
       <div
