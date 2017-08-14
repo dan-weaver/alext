@@ -29,8 +29,8 @@ const IssueButtons = ({ issues }) => {
             activeClassName="issue-button-red"
             to={`/issues/${issue.link}`}
           >
-            
-            {issue.pageTitle}
+
+            {issue.buttonTitle || issue.pageTitle}
           </Link>
         );
       })}
@@ -88,6 +88,7 @@ export const pageQuery = graphql`
     issueInfo: contentfulIssueInfo {
       id
       issues {
+        buttonTitle
         pageTitle
         link
       }
