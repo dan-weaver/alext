@@ -35,10 +35,12 @@ export default class Index extends React.Component {
     //     })
 
     window.NgpForms.onFormReady("Quick Sign Up", function() {
+      console.log('quick signup start render');
       var $signupHolder = $('.ngp-signup-holder');
       var signupForm = $signupHolder.find('.ngp-form');
       var newsignupForm = signupForm.clone();
       $('.ngp-signup-display').append(newsignupForm);
+      console.log('quick signup rendered');
     });
 
   }
