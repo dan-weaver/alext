@@ -56,7 +56,7 @@ function Ngp(win) {
   }
 }
 
-var NgpForms = Ngp(window);
+var NgpForms;
 
 
 
@@ -64,6 +64,7 @@ var NgpForms = Ngp(window);
 
 export default class Index extends React.Component {
   componentDidMount() {
+    NgpForms = NgpForms || Ngp(window)
     // window.nvtag_callbacks = window.nvtag_callbacks || {};
     // var postRenderCallbacks = window.nvtag_callbacks.postRender = window.nvtag_callbacks.postRender || [];
     // var ngpHasInit = postRenderCallbacks.length > 0;
