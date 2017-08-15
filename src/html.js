@@ -3,6 +3,59 @@ import PropTypes from "prop-types";
 
 const BUILD_TIME = new Date().getTime();
 
+var ngpScriptContent = `function Ngp(win) {
+  var hasLoadedNgp;
+  win.nvtag_callbacks = win.nvtag_callbacks || {};
+  var postRenderCallbacks = win.nvtag_callbacks.postRender = win.nvtag_callbacks.postRender || [];
+
+  var formLookUp = {
+
+  };
+
+  var makeFormState = function(name, callback) {
+    return {
+      hasRendered: false,
+      callback: callback || null
+    }
+  }
+
+  var registerCallback = function(formName, callback) {
+      var currentFormState = formLookUp[formName] || makeFormState(formName, callback);
+      formLookUp[formName] = currentFormState;
+  };
+
+  var isFormAlreadyReady = function(name) {
+    return formLookUp[name] && formLookUp[name].hasRendered;
+  }
+
+  postRenderCallbacks.push(
+    function(args) {
+      var currentFormState = formLookUp[args.form_definition.title] || makeFormState(name);
+      formLookUp[args.form_definition.title] = currentFormState;
+      if (currentFormState.callback) {
+        currentFormState.callback();
+      } else {
+        console.log("WARNING, form does not exist, " + " " + args.form_definition.title);
+      }
+      currentFormState.hasRendered = true;
+    }
+  );
+
+  return {
+    onFormReady(formName, callback) {
+        if (isFormAlreadyReady(formName)) {
+          setTimeout(function() {
+            callback();
+          }, 0)
+        } else {
+          registerCallback(formName, callback);
+        }
+    }
+  }
+};
+window.NgpForms = Ngp(window);
+`
+
 export default class HTML extends React.Component {
   static propTypes = {
     body: PropTypes.string
@@ -99,12 +152,18 @@ export default class HTML extends React.Component {
             rel="apple-touch-icon-precomposed"
             href="http://www.alextfortexas.com/wp-content/uploads/2017/05/favicon-180.png"
           />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: ngpScriptContent
+            }}
+            />
         </head>
         <body>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
+
           {this.props.postBodyComponents}
           <script src="https://use.typekit.net/bcw4pdn.js" />
           <script

@@ -3,60 +3,8 @@ import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import $ from 'jquery';
 
-var signupForm, getInvolvedForm;
 
-function Ngp(win) {
-  var hasLoadedNgp;
-  win.nvtag_callbacks = win.nvtag_callbacks || {};
-  var postRenderCallbacks = win.nvtag_callbacks.postRender = win.nvtag_callbacks.postRender || [];
 
-  var formLookUp = {
-
-  };
-
-  var makeFormState = function(name, callback) {
-    return {
-      hasRendered: false,
-      callback: callback || null
-    }
-  }
-
-  var registerCallback = function(formName, callback) {
-      var currentFormState = formLookUp[formName] || makeFormState(formName, callback);
-      formLookUp[formName] = currentFormState;
-  };
-
-  var isFormAlreadyReady = function(name) {
-    return formLookUp[name] && formLookUp[name].hasRendered;
-  }
-
-  postRenderCallbacks.push(
-    function(args) {
-      var currentFormState = formLookUp[args.form_definition.title] || makeFormState(name);
-      formLookUp[args.form_definition.title] = currentFormState;
-      if (currentFormState.callback) {
-        currentFormState.callback();
-      } else {
-        console.log("WARNING, form does not exist, " + " " + args.form_definition.title);
-      }
-      currentFormState.hasRendered = true;
-    }
-  );
-
-  return {
-    onFormReady(formName, callback) {
-        if (isFormAlreadyReady(formName)) {
-          setTimeout(function() {
-            callback();
-          }, 0)
-        } else {
-          registerCallback(formName, callback);
-        }
-    }
-  }
-}
-
-var NgpForms;
 
 
 
@@ -64,7 +12,6 @@ var NgpForms;
 
 export default class Index extends React.Component {
   componentDidMount() {
-    NgpForms = NgpForms || Ngp(window)
     // window.nvtag_callbacks = window.nvtag_callbacks || {};
     // var postRenderCallbacks = window.nvtag_callbacks.postRender = window.nvtag_callbacks.postRender || [];
     // var ngpHasInit = postRenderCallbacks.length > 0;
@@ -87,7 +34,7 @@ export default class Index extends React.Component {
     //       $('.ngp-get-involved-display').append(newgetInvolvedForm);
     //     })
 
-    NgpForms.onFormReady("Quick Sign Up", function() {
+    window.NgpForms.onFormReady("Quick Sign Up", function() {
       var $signupHolder = $('.ngp-signup-holder');
       var signupForm = $signupHolder.find('.ngp-form');
       var newsignupForm = signupForm.clone();
