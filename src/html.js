@@ -30,6 +30,7 @@ var ngpScriptContent = `function Ngp(win) {
 
   postRenderCallbacks.push(
     function(args) {
+      console.log('postRender', formLookUp[args.form_definition.title]);
       var currentFormState = formLookUp[args.form_definition.title] || makeFormState(name);
       formLookUp[args.form_definition.title] = currentFormState;
       if (currentFormState.callback) {
