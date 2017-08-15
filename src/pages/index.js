@@ -34,6 +34,7 @@ export default class Index extends React.Component {
     //       $('.ngp-get-involved-display').append(newgetInvolvedForm);
     //     })
 
+    console.log('before register quicksignup')
     window.NgpForms.onFormReady("Quick Sign Up", function() {
       console.log('quick signup start render');
       var $signupHolder = $('.ngp-signup-holder');
