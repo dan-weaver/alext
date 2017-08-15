@@ -7,19 +7,21 @@ var signupForm, getInvolvedForm;
 
 export default class Index extends React.Component {
   componentDidMount() {
-    var $signupHolder = $('.ngp-signup-holder');
-    var $getInvolvedHolder = $('.ngp-get-involved-holder');
+    $(document).ready(function() {
+      var $signupHolder = $('.ngp-signup-holder');
+      var $getInvolvedHolder = $('.ngp-get-involved-holder');
 
-    if (!signupForm) {
-      signupForm = $signupHolder.find('.ngp-form');
-      getInvolvedForm = $getInvolvedHolder.find('.ngp-form');
-    }
+      if (!signupForm) {
+        signupForm = $signupHolder.find('.ngp-form');
+        getInvolvedForm = $getInvolvedHolder.find('.ngp-form');
+      }
 
-    var newsignupForm = signupForm.clone();
-    var newgetInvolvedForm = getInvolvedForm.clone();
+      var newsignupForm = signupForm.clone();
+      var newgetInvolvedForm = getInvolvedForm.clone();
 
-    $('.ngp-signup-display').append(newsignupForm);
-    $('.ngp-get-involved-display').append(newgetInvolvedForm);
+      $('.ngp-signup-display').append(newsignupForm);
+      $('.ngp-get-involved-display').append(newgetInvolvedForm);
+    });
   }
   componentWillUnmount() {
     $('.ngp-signup-display').find('.ngp-form').detach();

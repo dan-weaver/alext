@@ -120,12 +120,10 @@ export default class HTML extends React.Component {
               }`
             }}
           />
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-
-        (function (i, s, o, g, r, a, m) {
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
                         (i[r].q = i[r].q || []).push(arguments)
@@ -140,11 +138,11 @@ export default class HTML extends React.Component {
         ga('create', 'UA-98445661-1', 'auto');
         ga('send', 'pageview');
             `
-          }}
+            }}
           />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
 
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -159,9 +157,14 @@ export default class HTML extends React.Component {
               //fbq('track', 'Lead');
               fbq('track', 'CompleteRegistration');
             `
-          }} />
+            }}
+          />
           <noscript>
-            <img height="1" width="1" src="https://www.facebook.com/tr?id=126121308005296&ev=PageView&noscript=1"/>
+            <img
+              height="1"
+              width="1"
+              src="https://www.facebook.com/tr?id=126121308005296&ev=PageView&noscript=1"
+            />
           </noscript>
           <script
             dangerouslySetInnerHTML={{
@@ -175,7 +178,7 @@ export default class HTML extends React.Component {
               })
               `
             }}
-            />
+          />
         </body>
       </html>
     );
