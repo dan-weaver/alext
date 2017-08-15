@@ -120,6 +120,40 @@ export default class HTML extends React.Component {
               }`
             }}
           />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window,document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '126121308005296');
+              fbq('track', 'PageView');
+              //fbq('track', 'Lead');
+              fbq('track', 'CompleteRegistration');
+            `
+          }} />
+          <noscript>
+            <img height="1" width="1" src="https://www.facebook.com/tr?id=126121308005296&ev=PageView&noscript=1"/>
+          </noscript>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              console.log('setting up ngp form');
+              window.nvtag_callbacks = window.nvtag_callbacks || {};
+              window.nvtag_callbacks.onSubmit = [];
+              window.nvtag_callbacks.onSubmit.push(function() {
+                console.log('submitted');
+                window.fbq('track', 'Lead');
+              })
+              `
+            }}
+            />
         </body>
       </html>
     );
