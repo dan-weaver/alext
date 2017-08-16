@@ -60,6 +60,7 @@ export default class Index extends React.Component {
     $('.ngp-signup-display').find('.ngp-form').detach();
   }
   render() {
+    console.log("RENDER");
     const { about: { about }, quote: { quote } } = this.props.data.basic
     return (
       <div>
