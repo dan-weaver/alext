@@ -8,7 +8,7 @@ var ngpScriptContent = `function Ngp(win) {
   win.nvtag_callbacks = win.nvtag_callbacks || {};
   var postRenderCallbacks = win.nvtag_callbacks.postRender = win.nvtag_callbacks.postRender || [];
 
-  
+
   var formLookUp = {
 
   };
@@ -35,7 +35,7 @@ var ngpScriptContent = `function Ngp(win) {
       var currentFormState = formLookUp[args.form_definition.title] || makeFormState(name);
       formLookUp[args.form_definition.title] = currentFormState;
       if (currentFormState.callback) {
-        currentFormState.callback();
+        setTimeout(currentFormState.callback(), 0);
       } else {
         console.log("WARNING, form does not exist, " + " " + args.form_definition.title);
       }
