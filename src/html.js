@@ -161,6 +161,22 @@ export default class HTML extends React.Component {
             />
         </head>
         <body>
+        <div style={{ display: "none" }} className="ngp-signup-holder">
+          <div
+            className="ngp-form quick-signup ngp-signup-form"
+            data-labels="inline"
+            data-id="-8884102406176503296"
+            data-resource-path="/"
+            data-template="minimal"
+          />
+        </div>
+        <div style={{ display: "none" }} className="ngp-get-involved-holder">
+          <div
+            className="ngp-form get-involved ngp-get-involved-form"
+            data-id="-7731180901569656320"
+            data-labels="inline"
+          />
+        </div>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}

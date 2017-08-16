@@ -42,6 +42,7 @@ export default class Index extends React.Component {
       var $signupHolder = $('.ngp-signup-holder');
       var signupForm = $signupHolder.find('.ngp-form');
       var newsignupForm = signupForm.clone();
+      newsignupForm.removeAttr('data-reactid')
       $(ReactDOM.findDOMNode(that)).find('.ngp-signup-display').append(newsignupForm);
       console.log('quick signup rendered');
     });
@@ -50,6 +51,7 @@ export default class Index extends React.Component {
       var $signupHolder = $('.ngp-get-involved-holder');
       var signupForm = $signupHolder.find('.ngp-form');
       var newsignupForm = signupForm.clone();
+      newsignupForm.removeAttr('data-reactid');
       $(ReactDOM.findDOMNode(that)).find('.ngp-get-involved-display').append(newsignupForm);
       console.log('quick signup rendered');
     })
