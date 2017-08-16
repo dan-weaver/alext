@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import $ from 'jquery';
+import ReactDOM from 'react-dom';
 
 
 
@@ -35,12 +36,13 @@ export default class Index extends React.Component {
     //     })
 
     console.log('before register quicksignup')
+    var that = this;
     window.NgpForms.onFormReady("Quick Sign Up", function() {
       console.log('quick signup start render');
       var $signupHolder = $('.ngp-signup-holder');
       var signupForm = $signupHolder.find('.ngp-form');
       var newsignupForm = signupForm.clone();
-      $('.ngp-signup-display').append(newsignupForm);
+      $(ReactDOM.findDOMNode(that)).find('.ngp-signup-display').append(newsignupForm);
       console.log('quick signup rendered');
     });
     window.NgpForms.onFormReady("Volunteer Sign Up", function() {
@@ -48,7 +50,7 @@ export default class Index extends React.Component {
       var $signupHolder = $('.ngp-get-involved-holder');
       var signupForm = $signupHolder.find('.ngp-form');
       var newsignupForm = signupForm.clone();
-      $('.ngp-get-involved-display').append(newsignupForm);
+      $(ReactDOM.findDOMNode(that)).find('.ngp-get-involved-display').append(newsignupForm);
       console.log('quick signup rendered');
     })
 
