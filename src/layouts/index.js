@@ -150,22 +150,23 @@ export default class Template extends React.Component {
           <header className="mobile">
             <ul className="nav">
               <li>
-                <a href="http://www.alextfortexas.com/#about">About Alex</a>
+                <Link to="/#about">About Alex</Link>
               </li>
               <li>
-                <a href="http://www.alextfortexas.com/#involved">
+                <Link to={`/#involved`}>
                   Get Involved
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="http://www.alextfortexas.com/policies.html">
+                <Link to={`/issues`}>
                   ISSUES
-                </a>
+                </Link>
               </li>
             </ul>
           </header>
           <div style={{ zIndex: 50000 }} className="dn-l contribute-header">
             <a
+              href={`https://secure.actblue.com/contribute/page/alexthomepage`}
               style={{ cursor: "pointer" }}
               className="bg-red pa3 db br0 w-100 v-mid w-100 tc white hover-white"
             >

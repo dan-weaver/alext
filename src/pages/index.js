@@ -43,6 +43,14 @@ export default class Index extends React.Component {
       $('.ngp-signup-display').append(newsignupForm);
       console.log('quick signup rendered');
     });
+    window.NgpForms.onFormReady("Volunteer Sign Up", function() {
+      console.log('volunteer start render');
+      var $signupHolder = $('.ngp-get-involved-holder');
+      var signupForm = $signupHolder.find('.ngp-form');
+      var newsignupForm = signupForm.clone();
+      $('.ngp-get-involved-display').append(newsignupForm);
+      console.log('quick signup rendered');
+    })
 
   }
   componentWillUnmount() {
@@ -108,12 +116,12 @@ export default class Index extends React.Component {
                 >
                   Contribute
                 </a>
-                <a
-                  href="http://www.alextfortexas.com/#involved"
+                <Link
+                  to="/#involved"
                   className="btn btn-darkblue"
                 >
                   Get Involved
-                </a>
+                </Link>
               </div>
             </div>
           </div>
