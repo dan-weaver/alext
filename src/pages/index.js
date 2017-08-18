@@ -83,8 +83,6 @@ export default class Index extends React.Component {
               <div className="screen-reader-response" />
               <div
                 className="old-form wpcf7-form"
-                action="http://alex.lovettcommercial.com/saveSignUp.ashx"
-                method="post"
               >
                 <div className="image" />
                 <div className="ngp-signup-display">
