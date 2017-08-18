@@ -72,7 +72,6 @@ export default class Index extends React.Component {
         >
           <div className="container">
             <div
-              role="form"
               className="wpcf7"
               id="wpcf7-f90-o1"
               lang="en-US"
