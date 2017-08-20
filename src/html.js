@@ -52,6 +52,9 @@ var ngpScriptContent = `function Ngp(win) {
         } else {
           registerCallback(formName, callback);
         }
+    },
+    destroy() {
+      // tear down form
     }
   }
 };

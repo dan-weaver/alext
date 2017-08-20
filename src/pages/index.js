@@ -5,59 +5,37 @@ import $ from 'jquery';
 import ReactDOM from 'react-dom';
 
 
-
-
-
-
-
+var quickSignup, getInvolved;
 
 export default class Index extends React.Component {
   componentDidMount() {
-    // window.nvtag_callbacks = window.nvtag_callbacks || {};
-    // var postRenderCallbacks = window.nvtag_callbacks.postRender = window.nvtag_callbacks.postRender || [];
-    // var ngpHasInit = postRenderCallbacks.length > 0;
-    // if (!ngpHasInit) {
-    //     console.log("SETUP")
-    //     postRenderCallbacks.push(function() {
-    //       console.log('ngp has rendered');
-    //       var $signupHolder = $('.ngp-signup-holder');
-    //       var $getInvolvedHolder = $('.ngp-get-involved-holder');
-    //
-    //       if (!signupForm) {
-    //         signupForm = $signupHolder.find('.ngp-form');
-    //         getInvolvedForm = $getInvolvedHolder.find('.ngp-form');
-    //       }
-    //
-    //       var newsignupForm = signupForm.clone();
-    //       var newgetInvolvedForm = getInvolvedForm.clone();
-    //
-    //       $('.ngp-signup-display').append(newsignupForm);
-    //       $('.ngp-get-involved-display').append(newgetInvolvedForm);
-    //     })
-
     console.log('before register quicksignup')
     var that = this;
     window.NgpForms.onFormReady("Quick Sign Up", function() {
-      console.log('quick signup start render');
-      var $signupHolder = $('.ngp-signup-holder');
-      var signupForm = $signupHolder.find('.ngp-form');
-      var newsignupForm = signupForm.clone();
-      $(ReactDOM.findDOMNode(that)).find('.ngp-signup-display').append(newsignupForm);
+      if (!quickSignup) {
+        console.log('QUICK signup doesnt exist yet')
+        var $signupHolder = $('.ngp-signup-holder');
+        var signupForm = $signupHolder.find('.ngp-form');
+        quickSignup = signupForm.detach();
+      }
+      $(ReactDOM.findDOMNode(that)).find('.ngp-signup-display').append(quickSignup);
       console.log('quick signup rendered');
     });
     window.NgpForms.onFormReady("Volunteer Sign Up", function() {
       console.log('volunteer start render');
-      var $signupHolder = $('.ngp-get-involved-holder');
-      var signupForm = $signupHolder.find('.ngp-form');
-      var newsignupForm = signupForm.clone();
-      $(ReactDOM.findDOMNode(that)).find('.ngp-get-involved-display').append(newsignupForm);
+      if (!getInvolved) {
+        var $signupHolder = $('.ngp-get-involved-holder');
+        var signupForm = $signupHolder.find('.ngp-form');
+        getInvolved = signupForm.detach();
+      }
+      $(ReactDOM.findDOMNode(that)).find('.ngp-get-involved-display').append(getInvolved);
       console.log('quick signup rendered');
     })
 
   }
   componentWillUnmount() {
-    $('.ngp-signup-display').find('.ngp-form').detach();
-    $('.ngp-signup-display').find('.ngp-form').detach();
+    getInvolved.detach();
+    quickSignup.detach();
   }
   render() {
     console.log("RENDER");
