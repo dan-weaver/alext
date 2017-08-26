@@ -3,14 +3,74 @@ import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import $ from "jquery";
+import { slide as Menu } from "react-burger-menu";
 
 import "../css/theme.css";
 import "tachyons";
 
+const burgerMenuStyles = {
+  bmBurgerButton: {
+    position: "fixed",
+    width: "20px",
+    height: "20px",
+    right: "36px",
+    top: "20px",
+    cursor: "pointer"
+  },
+  bmBurgerBars: {
+    cursor: "pointer",
+    background: "#FFF"
+  },
+  bmCrossButton: {
+    height: "24px",
+    width: "24px"
+  },
+  bmCross: {
+    background: "#FFF"
+  },
+  bmMenu: {
+    background: "#1b3c6c",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em"
+  },
+  bmMorphShape: {
+    fill: "#373a47"
+  },
+  bmItemList: {
+    color: "#b8b7ad",
+    padding: "0.8em"
+  },
+  bmOverlay: {
+    background: "rgba(0, 0, 0, 0.3)"
+  }
+};
 export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.func
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      burgerOpen: false
+    };
+  }
+
+  onBurgerStateChange(state) {
+    this.setState({ isOpen: state.isOpen });
+  }
+
+  closeBurger() {
+    this.setState({ burgerOpen: false });
+  }
+
+  openBurger() {
+    this.setState({ burgerOpen: true });
+  }
+
+  isBurgerOpen() {
+    return this.state.burgerOpen;
+  }
 
   componentDidMount() {
     $(window).scroll(function() {
@@ -50,6 +110,9 @@ export default class Template extends React.Component {
                     </li>
                     <li>
                       <Link to="/#involved">Get Involved</Link>
+                    </li>
+                    <li>
+                      <Link to="/news">News</Link>
                     </li>
                     <li>
                       <Link to={"/issues"}>
@@ -121,7 +184,10 @@ export default class Template extends React.Component {
                   </a>
                 </li>
                 <li className="social">
-                  <a href="https://www.youtube.com/channel/UCOH_pjm7JutFDgbxQ801Wwg" target="_blank">
+                  <a
+                    href="https://www.youtube.com/channel/UCOH_pjm7JutFDgbxQ801Wwg"
+                    target="_blank"
+                  >
                     <svg
                       height="40px"
                       version="1.1"
@@ -160,23 +226,35 @@ export default class Template extends React.Component {
           <header className="mobile">
             <ul className="nav">
               <li>
-                <Link to="/#about">About Alex</Link>
+                <Link to="/#involved">Get Involved</Link>
               </li>
               <li>
                 <a
                   href="https://secure.actblue.com/contribute/page/alexthomepage"
-                  className="bg-dark-red br-pill pa2"
                   target="_blank"
                 >
                   Contribute
                 </a>
               </li>
-              <li>
-                <Link to={`/issues`}>
-                  ISSUES
-                </Link>
-              </li>
             </ul>
+            <Menu right styles={burgerMenuStyles} isOpen={this.isBurgerOpen()}>
+              <Link className="pv3 b2 white" onClick={this.closeBurger.bind(this)} to="/#about">
+                ABOUT
+              </Link>
+              <a
+                href="https://secure.actblue.com/contribute/page/alexthomepage"
+                target="_blank"
+                className="dib pv3 white"
+              >
+                CONTRIBUTE
+              </a>
+              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/issues`}>
+                ISSUES
+              </Link>
+              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/news`}>
+                NEWS
+              </Link>
+            </Menu>
           </header>
         </div>
         {this.props.children()}
