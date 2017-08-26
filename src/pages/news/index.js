@@ -16,7 +16,7 @@ const Post = ({ data: { title, description, pubDate, link }, feed }) => {
     boxShadow: "0 1px 4px rgba(0,0,0,.04)"
   };
   return (
-    <div style={style} className="pa4 mv4 bg-white br5 ba b--light-gray">
+    <div style={style} className="pa4 mv3 bg-white br5 ba b--light-gray">
       <div className="cf">
         <div className="fl">
           <a href={postLink} className="dib" target="_blank">
@@ -36,9 +36,8 @@ const Post = ({ data: { title, description, pubDate, link }, feed }) => {
           </div>
         </div>
       </div>
-      <a href={postLink} className="pointer"><h3 className="b f4 mt2 near-black">{title}</h3></a>
-      <div className="mt3">
-        <a href={postLink} className="pointer medium-gray glow" target="_blank">read more...</a>
+      <a href={postLink} className="pointer" target="_blank"><h3 className="b f4 mt2 near-black">{title}</h3></a>
+      <div className="medium-post-content" dangerouslySetInnerHTML={{__html: description}}>
       </div>
     </div>
   );
