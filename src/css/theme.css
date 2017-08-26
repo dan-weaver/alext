@@ -814,27 +814,32 @@ section.banner .gradient {
 }
 
 .policiesBlock .policyDetail {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .policiesBlock .policyLeft {
-    width: 20%;
+    text-align: center;
     min-width: 120px;
-    padding: 15px 0 80px;
-    font-size: 20px;
+    padding: 15px 0 15px;
+    font-size: 23px;
     font-style: italic;
-    border-top: 2px solid #29aae1;
     color: #0A246A;
-    float: left;
 }
 
+
 .policiesBlock .policyRight {
-    width: 75%;
     min-width: 120px;
-    padding: 15px 0 80px;
-    margin-left: 5%;
+    padding: 15px 0 15px;
     border-top: 2px solid #29aae1;
-    float: left;
+}
+
+.policyMain {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    color: #888;
+
 }
 
 .policiesBlock .policyRight p {

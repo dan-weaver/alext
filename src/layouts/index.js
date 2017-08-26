@@ -15,6 +15,7 @@ export default class Template extends React.Component {
   componentDidMount() {
     $(window).scroll(function() {
       var scrollBanner = $("section.banner").height() + 40;
+      console.log(scrollBanner);
       if ($(document).scrollTop() > scrollBanner) {
         $("header.default").addClass("scroll");
       } else {
@@ -137,9 +138,13 @@ export default class Template extends React.Component {
                 <Link to="/#about">About Alex</Link>
               </li>
               <li>
-                <Link to={`/#involved`}>
-                  Get Involved
-                </Link>
+                <a
+                    href="https://secure.actblue.com/contribute/page/alexthomepage"
+                    className="bg-dark-red br-pill pa2"
+                    target="_blank"
+                  >
+                  Contribute
+                </a>
               </li>
               <li>
                 <Link to={`/issues`}>
@@ -148,15 +153,6 @@ export default class Template extends React.Component {
               </li>
             </ul>
           </header>
-          <div style={{ zIndex: 50000 }} className="dn-l contribute-header">
-            <a
-              href={`https://secure.actblue.com/contribute/page/alexthomepage`}
-              style={{ cursor: "pointer" }}
-              className="bg-red pa3 db br0 w-100 v-mid w-100 tc white hover-white"
-            >
-              CONTRIBUTE
-            </a>
-          </div>
         </div>
         {this.props.children()}
       </div>

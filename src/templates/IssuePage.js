@@ -3,11 +3,40 @@ import Link from "gatsby-link";
 import leftArrow from "../images/left-arrow.svg";
 import rightArrow from "../images/right-arrow.svg";
 
+const PolicyHeader = ({ children, main, overview, detail}) => {
+  const classes = `
+    f3
+    tc
+    i
+    pa3
+  `;
+  const styles = {
+    color: '#0A246A'
+  }
+  if (main) return <h1 style={styles} className={classes}>{children}</h1>;
+  if (overview) return <h2 style={styles} className={classes}>{children}</h2>;
+  if (detail) return <h3 style={styles} className={classes}>{children}</h3>
+
+}
+
+const IssueOverview = ({ section }) => {
+  return(
+    <div className={`policyMain`} >
+      <PolicyHeader overview>{section.sectionTitle}</PolicyHeader>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: section.sectionContent.sectionContent
+        }}
+      />
+    </div>
+  )
+}
+
 const IssueSection = ({ section }) => {
   return (
-    <div className="policyDetail">
+    <div className={`policyDetail`}>
       <div
-        className="policyLeft"
+        className={`policyLeft`}
         >
         {section.sectionTitle}
       </div>
@@ -54,8 +83,10 @@ export default class Issue extends React.Component {
             <p className="title">
               {issue.pageTitle}
             </p>
+            {issue.section && issue.section[0] &&
+              <IssueOverview section={issue.section[0]}/>}
             {issue.section &&
-              issue.section.map(s => <IssueSection section={s} />)}
+              issue.section.splice(1, issue.section.length).map((s, i) => <IssueSection section={s} main={i === 0} />)}
           </div>
         </section>
         <section className="policyRouter">
