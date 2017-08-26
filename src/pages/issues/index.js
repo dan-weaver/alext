@@ -56,12 +56,6 @@ export default class Issues extends React.Component {
         <section className="policies">
           <div className="container">
             <p className="title">Issues</p>
-            <p style={{ textAlign: "center", fontWeight: 300 }}>
-              Click on a policy area to learn more
-            </p>
-
-            <br />
-            <br />
             <p style={{ fontWeight: 300 }}>
               {this.props.data.issueInfo.mainContent.mainContent}
             </p>
