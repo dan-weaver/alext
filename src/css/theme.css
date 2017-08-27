@@ -1272,7 +1272,7 @@ Media Queries
 header.default .tagline {
     width: 130px;
     position: absolute;
-    top: 20px;
+    top: 28px;
     left: 180px;
     font-size: 13px;
     line-height: 1.2;
