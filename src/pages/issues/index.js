@@ -14,6 +14,7 @@ const IssueCard = ({ issue }) => {
       style={{ height: 200 }}
       className={`
         relative fl pa2 w-50-l w-100 ${classMap[type]} gray
+        
         issue-card
       `}
     >
