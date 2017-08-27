@@ -16,7 +16,6 @@ const IssueCard = ({ issue }) => {
         relative fl pa2 w-50-l w-100-m ${classMap[type]} gray
         issue-card
       `}
-      onclick="location.href='Issues/economy.html'"
     >
       <div
         className={`bg-light-gray hover-bg-alext-blue pa3 br2 h-100 issue-card-content`}
