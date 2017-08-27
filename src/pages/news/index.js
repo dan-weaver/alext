@@ -37,7 +37,7 @@ const Post = ({ data: { title, description, pubDate, link }, feed }) => {
         </div>
       </div>
       <a href={postLink} className="pointer" target="_blank"><h3 className="b f4 mt2 near-black">{title}</h3></a>
-      <div className="medium-post-content" dangerouslySetInnerHTML={{__html: description}}>
+      <div className="medium-post-content" style={{overflow:"hidden"}} dangerouslySetInnerHTML={{__html: description}}>
       </div>
     </div>
   );
