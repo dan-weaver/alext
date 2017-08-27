@@ -99,7 +99,7 @@ export default class Template extends React.Component {
             <Link to={"/"} className="logo-white" />
             <Link to={"/"} className="logo-white-small" />
             <div className="tagline">
-              Candidate for Texas Congressional District 7
+              Texas's 7th Congressional District
             </div>
             <nav>
               <ul className="nav">

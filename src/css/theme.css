@@ -309,6 +309,7 @@ header.default.scroll ul.nav a {
 
 header.default.scroll ul.nav > li > ul > li {
     display: table-cell;
+    white-space: nowrap;
     vertical-align: middle;
     padding: 5px 20px;
     border-left-color: rgba(27, 59, 108, .3);
