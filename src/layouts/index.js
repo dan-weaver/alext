@@ -238,22 +238,22 @@ export default class Template extends React.Component {
               </li>
             </ul>
             <Menu right styles={burgerMenuStyles} isOpen={this.isBurgerOpen()}>
-              <Link className="pv3 b2 white" onClick={this.closeBurger.bind(this)} to="/#about">
+              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to="/#about">
                 ABOUT
               </Link>
-              <a
-                href="https://secure.actblue.com/contribute/page/alexthomepage"
-                target="_blank"
-                className="dib pv3 white"
-              >
-                CONTRIBUTE
-              </a>
               <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/issues`}>
                 ISSUES
               </Link>
               <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/news`}>
                 NEWS
               </Link>
+              <a
+                className="pv3 white"
+                href="https://secure.actblue.com/contribute/page/alexthomepage"
+                target="_blank"
+              >
+                CONTRIBUTE
+              </a>
             </Menu>
           </header>
         </div>
