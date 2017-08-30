@@ -83,7 +83,7 @@ export default class Issues extends React.Component {
             fontFamily: '"clarendon-text-pro", serif',
             fontSize: "35px"
           }}
-          className="bg-alext-blue tc white pa3 i fw5"
+          className="bg-alext-blue tc white pt5 pb3 i fw5"
         >
           News
         </div>
