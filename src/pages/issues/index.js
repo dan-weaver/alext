@@ -14,7 +14,7 @@ const IssueCard = ({ issue }) => {
       style={{ height: 200 }}
       className={`
         relative fl pa2 w-50-l w-100 ${classMap[type]} gray
-
+        
         issue-card
       `}
     >
@@ -54,7 +54,7 @@ export default class Issues extends React.Component {
       <div>
 
         <section className="policies">
-          <div className="container pv4">
+          <div className="container">
             <p className="title">Issues</p>
             <p style={{ fontWeight: 300 }}>
               {this.props.data.issueInfo.mainContent.mainContent}

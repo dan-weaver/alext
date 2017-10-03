@@ -73,15 +73,15 @@ export default class Template extends React.Component {
   }
 
   componentDidMount() {
-    // $(window).scroll(function() {
-    //   var scrollBanner = $("section.banner").height() + 40;
-    //   console.log(scrollBanner);
-    //   if ($(document).scrollTop() > scrollBanner) {
-    //     $("header.default").addClass("scroll");
-    //   } else {
-    //     $("header.default").removeClass("scroll");
-    //   }
-    // });
+    $(window).scroll(function() {
+      var scrollBanner = $("section.banner").height() + 40;
+      console.log(scrollBanner);
+      if ($(document).scrollTop() > scrollBanner) {
+        $("header.default").addClass("scroll");
+      } else {
+        $("header.default").removeClass("scroll");
+      }
+    });
   }
 
   render() {
@@ -238,25 +238,13 @@ export default class Template extends React.Component {
               </li>
             </ul>
             <Menu right styles={burgerMenuStyles} isOpen={this.isBurgerOpen()}>
-              <Link
-                className="pv3 white"
-                onClick={this.closeBurger.bind(this)}
-                to="/#about"
-              >
+              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to="/#about">
                 ABOUT
               </Link>
-              <Link
-                className="pv3 white"
-                onClick={this.closeBurger.bind(this)}
-                to={`/issues`}
-              >
+              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/issues`}>
                 ISSUES
               </Link>
-              <Link
-                className="pv3 white"
-                onClick={this.closeBurger.bind(this)}
-                to={`/news`}
-              >
+              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/news`}>
                 NEWS
               </Link>
               <a
@@ -268,16 +256,6 @@ export default class Template extends React.Component {
               </a>
             </Menu>
           </header>
-          <div className="bg-red near-white pa2 tc b pointer">
-            <a
-              href="https://medium.com/@alextfortexas/assisting-victims-of-hurricane-harvey-1492da66a25a"
-              target="_blank"
-              className="white hover-white"
-            >
-              Assisting victims of Hurricane Harvey: Find resources and ways you
-              can help <span className="white underline hover-blue">here</span>
-            </a>
-          </div>
         </div>
         {this.props.children()}
       </div>
