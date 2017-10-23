@@ -14,7 +14,7 @@ dependencies:
     - docker info
     - npm -v
     - node -v
-    - npm install gatsby@1.1.6 -g
+    - npm install gatsby@1.1 -g
     - npm install
     - gatsby --version
     - npm run build
