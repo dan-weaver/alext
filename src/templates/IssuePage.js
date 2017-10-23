@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import leftArrow from "../images/left-arrow.svg";
 import rightArrow from "../images/right-arrow.svg";
 
-const PolicyHeader = ({ children, main, overview, detail}) => {
+const PolicyHeader = ({ children, main, overview, detail }) => {
   const classes = `
     f3
     tc
@@ -11,17 +11,31 @@ const PolicyHeader = ({ children, main, overview, detail}) => {
     pa3
   `;
   const styles = {
-    color: '#0A246A'
-  }
-  if (main) return <h1 style={styles} className={classes}>{children}</h1>;
-  if (overview) return <h2 style={styles} className={classes}>{children}</h2>;
-  if (detail) return <h3 style={styles} className={classes}>{children}</h3>
-
-}
+    color: "#0A246A"
+  };
+  if (main)
+    return (
+      <h1 style={styles} className={classes}>
+        {children}
+      </h1>
+    );
+  if (overview)
+    return (
+      <h2 style={styles} className={classes}>
+        {children}
+      </h2>
+    );
+  if (detail)
+    return (
+      <h3 style={styles} className={classes}>
+        {children}
+      </h3>
+    );
+};
 
 const IssueOverview = ({ section }) => {
-  return(
-    <div className={`policyMain`} >
+  return (
+    <div className={`policyMain`}>
       <PolicyHeader overview>{section.sectionTitle}</PolicyHeader>
       <div
         dangerouslySetInnerHTML={{
@@ -29,17 +43,13 @@ const IssueOverview = ({ section }) => {
         }}
       />
     </div>
-  )
-}
+  );
+};
 
 const IssueSection = ({ section }) => {
   return (
     <div className={`policyDetail`}>
-      <div
-        className={`policyLeft`}
-        >
-        {section.sectionTitle}
-      </div>
+      <div className={`policyLeft`}>{section.sectionTitle}</div>
       <div
         className="policyRight"
         dangerouslySetInnerHTML={{
@@ -60,7 +70,6 @@ const IssueButtons = ({ issues }) => {
             activeClassName="issue-button-red"
             to={`/issues/${issue.link}`}
           >
-
             {issue.buttonTitle || issue.pageTitle}
           </Link>
         );
@@ -73,6 +82,7 @@ export default class Issue extends React.Component {
   render() {
     const issue = this.props.data.issue;
     const issues = this.props.data.issueInfo.issues;
+    console.log("ISSUE RENDER", issue.section.length);
 
     const nextIssue = getNextIssue(issues, issue);
 
@@ -80,13 +90,13 @@ export default class Issue extends React.Component {
       <div>
         <section className="policiesBlock">
           <div className="container">
-            <p className="title">
-              {issue.pageTitle}
-            </p>
-            {issue.section && issue.section[0] &&
-              <IssueOverview section={issue.section[0]}/>}
+            <p className="title">{issue.pageTitle}</p>
             {issue.section &&
-              issue.section.splice(1, issue.section.length).map((s, i) => <IssueSection section={s} main={i === 0} />)}
+              issue.section[0] && <IssueOverview section={issue.section[0]} />}
+            {issue.section &&
+              issue.section
+                .slice(1)
+                .map((s, i) => <IssueSection section={s} main={i === 0} />)}
           </div>
         </section>
         <section className="policyRouter">
@@ -95,7 +105,10 @@ export default class Issue extends React.Component {
               <Link className="db fl white hover-white fw2" to={`/issues`}>
                 Back to Issues
               </Link>
-              <Link className="db fr white hover-white fw2" to={`/issues/${nextIssue.link}`}>
+              <Link
+                className="db fr white hover-white fw2"
+                to={`/issues/${nextIssue.link}`}
+              >
                 Go to Next Policy
               </Link>
             </div>
