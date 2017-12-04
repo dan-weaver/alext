@@ -6,4 +6,4 @@ more typos
 
 adding equality section
 
-italicized
+italicized typo
