@@ -5,3 +5,5 @@ Fixed some typos in contentful (apostrophes)
 more typos
 
 adding equality section
+
+italicized
