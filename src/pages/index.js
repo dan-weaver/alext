@@ -66,10 +66,19 @@ export default class Index extends React.Component {
           <div className="gradient" />
         </section>
 
-        <section
-          className="declaration"
-          dangerouslySetInnerHTML={{ __html: quote }}
-        />
+        <section className="declaration">
+          <div className="container">
+            I'm running because the people of Texas's 7th Congressional District
+            deserve a representative who is already a{" "}
+            <strong>partner in the community</strong>, who will make{" "}
+            <strong>smart investments</strong> that create opportunities for all
+            families, and who{" "}
+            <strong>will make Washington more like Houston</strong> in the
+            process.
+            <br />
+            <br />-<span> Alex Triantaphyllis </span>
+          </div>
+        </section>
 
         <section id="about">
           <div className="container">
@@ -79,7 +88,7 @@ export default class Index extends React.Component {
             </div>
             <div className="main">
               <div>
-                <div class="richtext">
+                <div className="richtext">
                   <p>
                     <strong>DEEP ROOTS IN OUR COMMUNITY</strong>
                     <br />The son of a fourth-generation Texan mother and Greek
@@ -258,16 +267,3 @@ export default class Index extends React.Component {
     );
   }
 }
-export const pageQuery = graphql`
-  query PageQuery {
-    basic: contentfulBasicInfo {
-      id
-      about {
-        about
-      }
-      quote {
-        quote
-      }
-    }
-  }
-`;
