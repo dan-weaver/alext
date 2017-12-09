@@ -1,37 +1,39 @@
 import React from "react";
-import Link from "gatsby-link"
-import Helmet from "react-helmet"
-import $ from 'jquery';
-import ReactDOM from 'react-dom';
-
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
+import $ from "jquery";
+import ReactDOM from "react-dom";
 
 var quickSignup, getInvolved;
 
 export default class Index extends React.Component {
   componentDidMount() {
-    console.log('before register quicksignup')
+    console.log("before register quicksignup");
     var that = this;
     window.NgpForms.onFormReady("Quick Sign Up", function() {
       if (!quickSignup) {
-        console.log('QUICK signup doesnt exist yet')
-        var $signupHolder = $('.ngp-signup-holder');
-        var signupForm = $signupHolder.find('.ngp-form');
+        console.log("QUICK signup doesnt exist yet");
+        var $signupHolder = $(".ngp-signup-holder");
+        var signupForm = $signupHolder.find(".ngp-form");
         quickSignup = signupForm.detach();
       }
-      $(ReactDOM.findDOMNode(that)).find('.ngp-signup-display').append(quickSignup);
-      console.log('quick signup rendered');
+      $(ReactDOM.findDOMNode(that))
+        .find(".ngp-signup-display")
+        .append(quickSignup);
+      console.log("quick signup rendered");
     });
     window.NgpForms.onFormReady("Volunteer Sign Up", function() {
-      console.log('volunteer start render');
+      console.log("volunteer start render");
       if (!getInvolved) {
-        var $signupHolder = $('.ngp-get-involved-holder');
-        var signupForm = $signupHolder.find('.ngp-form');
+        var $signupHolder = $(".ngp-get-involved-holder");
+        var signupForm = $signupHolder.find(".ngp-form");
         getInvolved = signupForm.detach();
       }
-      $(ReactDOM.findDOMNode(that)).find('.ngp-get-involved-display').append(getInvolved);
-      console.log('quick signup rendered');
-    })
-
+      $(ReactDOM.findDOMNode(that))
+        .find(".ngp-get-involved-display")
+        .append(getInvolved);
+      console.log("quick signup rendered");
+    });
   }
   componentWillUnmount() {
     getInvolved.detach();
@@ -39,7 +41,7 @@ export default class Index extends React.Component {
   }
   render() {
     console.log("RENDER");
-    const { about: { about }, quote: { quote } } = this.props.data.basic
+    const { about: { about }, quote: { quote } } = this.props.data.basic;
     return (
       <div>
         <section
@@ -49,19 +51,11 @@ export default class Index extends React.Component {
           }}
         >
           <div className="container">
-            <div
-              className="wpcf7"
-              id="wpcf7-f90-o1"
-              lang="en-US"
-              dir="ltr"
-            >
+            <div className="wpcf7" id="wpcf7-f90-o1" lang="en-US" dir="ltr">
               <div className="screen-reader-response" />
-              <div
-                className="old-form wpcf7-form"
-              >
+              <div className="old-form wpcf7-form">
                 <div className="image" />
-                <div className="ngp-signup-display">
-                </div>
+                <div className="ngp-signup-display" />
               </div>
             </div>
           </div>
@@ -72,19 +66,78 @@ export default class Index extends React.Component {
           <div className="gradient" />
         </section>
 
-        <section className="declaration" dangerouslySetInnerHTML={{__html: quote}}>
-        </section>
+        <section
+          className="declaration"
+          dangerouslySetInnerHTML={{ __html: quote }}
+        />
 
         <section id="about">
           <div className="container">
             <div className="side">
               <h2 className="title">About Alex</h2>
-              <div
-                className="image image-about"
-              />
+              <div className="image image-about" />
             </div>
             <div className="main">
-              <div dangerouslySetInnerHTML={{__html: about}}>
+              <div>
+                <div class="richtext">
+                  <p>
+                    <strong>DEEP ROOTS IN OUR COMMUNITY</strong>
+                    <br />The son of a fourth-generation Texan mother and Greek
+                    immigrant father, Alex Triantaphyllis was born and raised in
+                    Houston, where he is an active member of the community
+                    through the Welcoming Houston initiative, the City of
+                    Houston's Equitable Economic Development Committee, and the
+                    Plan Downtown Steering Committee, among other efforts.
+                  </p>
+                  <p>
+                    He is currently the Director of Immigration and Economic
+                    Opportunity at BakerRipley (formerly Neighborhood Centers),
+                    Houston's leading nonprofit community development
+                    organization, where he started a small business development
+                    program and oversees an immigrant legal services office.
+                  </p>
+                  <p>
+                    {" "}
+                    Alex is also the founder of PAIR: Partnership for the
+                    Advancement &amp; Immersion of Refugees&mdash;a nonprofit
+                    that provides educational mentorship to refugee youth
+                    resettled in the Houston area.
+                  </p>
+                  <p>
+                    <strong>A LEADER WHO BRINGS PEOPLE TOGETHER</strong>
+                    <br /> Alex is a Democrat who believes in the strength and
+                    diversity of this country. In Congress, Alex will work to
+                    create jobs, make families safer and stronger, and listen to
+                    local communities so that their goals and the challenges
+                    they face are at the core of how Alex does his job.
+                  </p>
+                  <p>
+                    After working for a top Wall Street firm, he chose to pursue
+                    a career advocating for community members in the Houston
+                    area. Alex has brought his experience in the legal,
+                    business, and nonprofit sectors to his work on small
+                    business, transportation, immigration, and other issues in
+                    Houston. He has learned how to do what so many politicians
+                    cannot: listen to communities, appreciate their strengths,
+                    and work alongside community members to generate ideas and
+                    solve problems.
+                  </p>
+                  <p>
+                    Alex graduated from Rice University with a BA in political
+                    science and Hispanic studies, and he completed Masters in
+                    Economics coursework in Argentina. Alex is also a graduate
+                    of Harvard Law School, where he was an editor of the{" "}
+                    <em>Harvard Law Review</em>.
+                  </p>
+                  <p>
+                    Alex is married to Christina Lagos Triantaphyllis, whom he
+                    met at Rice. Christina leads public policy and strategy
+                    efforts at Collaborative for Children, a nonprofit
+                    organization that focuses on improving the quality of early
+                    childhood education and care in the Houston area. They live
+                    in Houston with their infant daughter, Mina.
+                  </p>
+                </div>
               </div>
               <div className="buttons">
                 <a
@@ -94,10 +147,7 @@ export default class Index extends React.Component {
                 >
                   Contribute
                 </a>
-                <Link
-                  to="/#involved"
-                  className="btn btn-darkblue"
-                >
+                <Link to="/#involved" className="btn btn-darkblue">
                   Get Involved
                 </Link>
               </div>
@@ -110,8 +160,7 @@ export default class Index extends React.Component {
             <div className="side">
               <h2 className="title">Get Involved</h2>
             </div>
-            <div className="main ngp-get-involved-display">
-            </div>
+            <div className="main ngp-get-involved-display" />
           </div>
         </section>
 
@@ -212,9 +261,13 @@ export default class Index extends React.Component {
 export const pageQuery = graphql`
   query PageQuery {
     basic: contentfulBasicInfo {
-        id
-        about { about }
-        quote { quote }
+      id
+      about {
+        about
+      }
+      quote {
+        quote
+      }
     }
   }
-`
+`;
