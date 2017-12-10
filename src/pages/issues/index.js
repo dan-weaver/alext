@@ -2,7 +2,6 @@ import React from "react";
 import Link from "gatsby-link";
 
 const IssueCard = ({ issue }) => {
-  console.log(issue);
   const type = issue.frontmatter.cardType || "normal";
 
   const classMap = {
@@ -168,7 +167,10 @@ export default class Issues extends React.Component {
 
 export const pageQuery = graphql`
   query IssuesQuery {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "issue" } } }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___order] }
+      filter: { frontmatter: { type: { eq: "issue" } } }
+    ) {
       edges {
         node {
           id
@@ -178,6 +180,7 @@ export const pageQuery = graphql`
             subtitle
             title
             path
+            cardType
           }
         }
       }

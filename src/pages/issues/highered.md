@@ -1,4 +1,5 @@
 ---
+order: 6
 type: issue
 title: Higher Education
 subtitle: Making college affordable

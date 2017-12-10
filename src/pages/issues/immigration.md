@@ -1,8 +1,10 @@
 ---
+order: 4
 title: Immigration
 subtitle: Welcoming and valuing immigrants
 path: immigration
 type: issue
+cardType: horizontal
 ---
 
 ## Welcoming and valuing immigrants

@@ -1,8 +1,10 @@
 ---
+order: 11
 type: issue
 title: Equality
 subtitle: Continuing our fight to ensure equal fustice for all
 path: equality
+cardType: horizontal
 ---
 
 ## Continuing our fight to ensure equal fustice for all

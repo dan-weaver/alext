@@ -1,4 +1,5 @@
 ---
+order: 10
 type: issue
 title: Campaign Finance and Electoral Reform
 subtitle: Protecting and strengthening our democracy 

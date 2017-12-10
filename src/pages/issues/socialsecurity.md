@@ -1,8 +1,10 @@
 ---
+order: 7
 type: issue 
 title: Social Security and Medicare 
 subtitle: Protecting and Strengthening Programs for Seniors
 path: seniors
+cardType: horizontal
 ---
 
 ## Protecting and strengthening programs for seniors

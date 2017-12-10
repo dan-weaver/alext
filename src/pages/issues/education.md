@@ -1,8 +1,10 @@
 ---
+order: 8
 path: education 
 title: K-12 Education 
 subtitle: Strengthening our public k-12 system for all students
 type: issue
+cardType: horizontal
 ---
 
 ## Strengthening our public K-12 system for all students

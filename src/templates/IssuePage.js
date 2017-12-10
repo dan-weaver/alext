@@ -121,6 +121,7 @@ export default class Issue extends React.Component {
 export const pageQuery = graphql`
   query issuePageQuery($id: String!) {
     allIssues: allMarkdownRemark(
+      sort: { fields: [frontmatter___order] }
       filter: { frontmatter: { type: { eq: "issue" } } }
     ) {
       edges {
