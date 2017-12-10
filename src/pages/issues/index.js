@@ -2,7 +2,8 @@ import React from "react";
 import Link from "gatsby-link";
 
 const IssueCard = ({ issue }) => {
-  const type = issue.cardType || "normal";
+  console.log(issue);
+  const type = issue.frontmatter.cardType || "normal";
 
   const classMap = {
     normal: "w-third-l",
@@ -23,23 +24,20 @@ const IssueCard = ({ issue }) => {
       >
         <Link
           className="absolute top-0 right-0 left-0 bottom-0"
-          to={`/issues/${issue.link}`}
+          to={`/issues/${issue.frontmatter.path}`}
         />
-        <h2 className="b">
-          {issue.cardTitle}
-        </h2>
+        <h2 className="b">{issue.frontmatter.title}</h2>
         <br />
         <br />
-        <p>{issue.cardContent}</p>
-        <div className="absolute bottom-2" style={{cursor: `pointer`}}>
+        <p>{issue.frontmatter.subtitle}</p>
+        <div className="absolute bottom-2" style={{ cursor: `pointer` }}>
           READ MORE
-
           <div className="arrow-link dib">
             <svg xmlns="http://www.w3.org/2000/svg">
-                <line x1="20" y1="0" x2="30" y2="7"></line>
-                <line x1="8" y1="7" x2="28" y2="7"></line>
-                <line x1="20" y1="14" x2="30" y2="7"></line>
-              </svg>
+              <line x1="20" y1="0" x2="30" y2="7" />
+              <line x1="8" y1="7" x2="28" y2="7" />
+              <line x1="20" y1="14" x2="30" y2="7" />
+            </svg>
           </div>
         </div>
       </div>
@@ -49,21 +47,28 @@ const IssueCard = ({ issue }) => {
 
 export default class Issues extends React.Component {
   render() {
-    const issues = this.props.data.issueInfo.issues;
+    const issues = this.props.data.allMarkdownRemark.edges;
     return (
       <div>
-
         <section className="policies">
           <div className="container">
             <p className="title">Issues</p>
             <p style={{ fontWeight: 300 }}>
-              {this.props.data.issueInfo.mainContent.mainContent}
+              We are proud to be a campaign of ideas and to be building a vision
+              to create a stronger and healthier community in Texas's 7th
+              Congressional District. We hope you'll read Alex's policy ideas
+              and values for the Houston region, but we also want to build this
+              vision collaboratively with you. That's why we're conducting a
+              Listening Tour to make sure we are getting input from community
+              members about these ideas and other issues throughout our
+              campaign. We also want to hear your thoughts at
+              ideas@alextfortexas.com. Thanks for your input and feedback!
             </p>
           </div>
         </section>
         <section className="policiesBlock">
           <div className="mw8 center cf">
-            {issues.map(issue => <IssueCard issue={issue} />)}
+            {issues.map(issue => <IssueCard issue={issue.node} />)}
           </div>
         </section>
         <footer>
@@ -163,16 +168,18 @@ export default class Issues extends React.Component {
 
 export const pageQuery = graphql`
   query IssuesQuery {
-    issueInfo: contentfulIssueInfo {
-      id
-      mainContent { mainContent }
-      issues {
-        pageTitle
-        cardContent
-        buttonTitle
-        cardTitle
-        cardType
-        link
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "issue" } } }) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            buttonTitle
+            subtitle
+            title
+            path
+          }
+        }
       }
     }
   }

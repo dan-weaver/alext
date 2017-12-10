@@ -40,8 +40,6 @@ export default class Index extends React.Component {
     quickSignup.detach();
   }
   render() {
-    console.log("RENDER");
-    const { about: { about }, quote: { quote } } = this.props.data.basic;
     return (
       <div>
         <section

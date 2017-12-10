@@ -68,9 +68,9 @@ const IssueButtons = ({ issues }) => {
           <Link
             className="link hover-white hover-issue-red br1 ba dib issue-button-blue white sans-serif fw4 pa2 ma2 b--transparent"
             activeClassName="issue-button-red"
-            to={`/issues/${issue.link}`}
+            to={`/issues/${issue.node.frontmatter.path}`}
           >
-            {issue.buttonTitle || issue.pageTitle}
+            {issue.node.frontmatter.buttonTitle || issue.node.frontmatter.title}
           </Link>
         );
       })}
@@ -80,9 +80,9 @@ const IssueButtons = ({ issues }) => {
 
 export default class Issue extends React.Component {
   render() {
+    console.log(this.props.data);
     const issue = this.props.data.issue;
-    const issues = this.props.data.issueInfo.issues;
-    console.log("ISSUE RENDER", issue.section.length);
+    const issues = this.props.data.allIssues.edges;
 
     const nextIssue = getNextIssue(issues, issue);
 
@@ -90,13 +90,11 @@ export default class Issue extends React.Component {
       <div>
         <section className="policiesBlock">
           <div className="container">
-            <p className="title">{issue.pageTitle}</p>
-            {issue.section &&
-              issue.section[0] && <IssueOverview section={issue.section[0]} />}
-            {issue.section &&
-              issue.section
-                .slice(1)
-                .map((s, i) => <IssueSection section={s} main={i === 0} />)}
+            <p className="title">{issue.frontmatter.title}</p>
+            <div
+              className="issue-markdown"
+              dangerouslySetInnerHTML={{ __html: issue.html }}
+            />
           </div>
         </section>
         <section className="policyRouter">
@@ -107,7 +105,7 @@ export default class Issue extends React.Component {
               </Link>
               <Link
                 className="db fr white hover-white fw2"
-                to={`/issues/${nextIssue.link}`}
+                to={`/issues/${nextIssue.node.frontmatter.path}`}
               >
                 Go to Next Policy
               </Link>
@@ -122,22 +120,26 @@ export default class Issue extends React.Component {
 
 export const pageQuery = graphql`
   query issuePageQuery($id: String!) {
-    issue: contentfulIssue(id: { eq: $id }) {
-      pageTitle
-      section {
-        sectionContent {
-          sectionContent
+    allIssues: allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "issue" } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            buttonTitle
+            title
+            path
+          }
         }
-        sectionTitle
       }
     }
-    issueInfo: contentfulIssueInfo {
+    issue: markdownRemark(id: { eq: $id }) {
       id
-      issues {
-        buttonTitle
-        pageTitle
-        link
+      frontmatter {
+        title
       }
+      html
     }
   }
 `;
@@ -145,7 +147,7 @@ export const pageQuery = graphql`
 function getIssueIndex(issues, issue) {
   var issueIndex;
   issues.forEach((i, idx) => {
-    if (i.pageTitle === issue.pageTitle) {
+    if (i.node.frontmatter.title === issue.frontmatter.title) {
       issueIndex = idx;
     }
   });
