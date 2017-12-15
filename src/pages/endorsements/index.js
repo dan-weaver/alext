@@ -274,26 +274,3 @@ export default class Endorsements extends React.Component {
     );
   }
 }
-
-export const pageQuery = graphql`
-  query IssuesQuery {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___order] }
-      filter: { frontmatter: { type: { eq: "issue" } } }
-    ) {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            buttonTitle
-            subtitle
-            title
-            path
-            cardType
-          }
-        }
-      }
-    }
-  }
-`;
