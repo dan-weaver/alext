@@ -98,9 +98,7 @@ export default class Template extends React.Component {
           <header className="default">
             <Link to={"/"} className="logo-white" />
             <Link to={"/"} className="logo-white-small" />
-            <div className="tagline">
-              Texas's 7th Congressional District
-            </div>
+            <div className="tagline">Texas's 7th Congressional District</div>
             <nav>
               <ul className="nav">
                 <li>
@@ -115,9 +113,10 @@ export default class Template extends React.Component {
                       <Link to="/news">News</Link>
                     </li>
                     <li>
-                      <Link to={"/issues"}>
-                        ISSUES
-                      </Link>
+                      <Link to="/endorsements">Endorsements</Link>
+                    </li>
+                    <li>
+                      <Link to={"/issues"}>ISSUES</Link>
                     </li>
                   </ul>
                 </li>
@@ -238,13 +237,25 @@ export default class Template extends React.Component {
               </li>
             </ul>
             <Menu right styles={burgerMenuStyles} isOpen={this.isBurgerOpen()}>
-              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to="/#about">
+              <Link
+                className="pv3 white"
+                onClick={this.closeBurger.bind(this)}
+                to="/#about"
+              >
                 ABOUT
               </Link>
-              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/issues`}>
+              <Link
+                className="pv3 white"
+                onClick={this.closeBurger.bind(this)}
+                to={`/issues`}
+              >
                 ISSUES
               </Link>
-              <Link className="pv3 white" onClick={this.closeBurger.bind(this)} to={`/news`}>
+              <Link
+                className="pv3 white"
+                onClick={this.closeBurger.bind(this)}
+                to={`/news`}
+              >
                 NEWS
               </Link>
               <a
