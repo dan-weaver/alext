@@ -28,7 +28,7 @@ export default class Endorsements extends React.Component {
                   Alex's experience building bridges in our community, paired
                   with his business experience, prepare him well to represent
                   Texas's 7th district in Congress. Houstonians are hardworking,
-                  entrepreneurial, and optimistic &mdash; Alex embodies those
+                  entrepreneurial, and optimistic &#8212; Alex embodies those
                   qualities and will be a strong and responsive representative
                   of Houston in Congress. I'm proud to endorse Alex because I
                   know he will champion the issues I fought for here in Texas:
@@ -110,7 +110,7 @@ export default class Endorsements extends React.Component {
                 <li>Nory Angel, Nonprofit executive</li>
                 <li>Ann Barnes, Doctor and health advocate</li>
                 <li>Matt Barnes, Education advocate</li>
-                <li>Adeeb Barqawi, President & CEO &mdash; ProUnitas, Inc.</li>
+                <li>Adeeb Barqawi, President & CEO  &#8212; ProUnitas, Inc.</li>
                 <li>Joseph Batdorf, Local business owner</li>
                 <li>Jill Campbell, Immigration attorney</li>
                 <li>Andrea Caracostis, Community health advocate</li>
@@ -144,7 +144,7 @@ export default class Endorsements extends React.Component {
                 </li>
                 <li>Cary Kottler, Renewable energy executive</li>
                 <li>Meredith Kottler, Educator and refugee advocate</li>
-                <li>Brenda Kirk, CEO &mdash; Vision Weavers Consulting</li>
+                <li>Brenda Kirk, CEO  &#8212; Vision Weavers Consulting</li>
                 <li>
                   Stan Marek, Business leader and immigration reform advocate
                 </li>
