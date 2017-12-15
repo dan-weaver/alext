@@ -24,17 +24,17 @@ export default class Endorsements extends React.Component {
               <h2 className="mb2">Mark White, late Texas Governor:</h2>
               <div>
                 <p>
-                  “I am proud to support Alex Triantaphyllis for Congress.
-                  Alex’s experience building bridges in our community, paired
+                  "I am proud to support Alex Triantaphyllis for Congress.
+                  Alex's experience building bridges in our community, paired
                   with his business experience, prepare him well to represent
-                  Texas’s 7th district in Congress. Houstonians are hardworking,
-                  entrepreneurial, and optimistic — Alex embodies those
+                  Texas's 7th district in Congress. Houstonians are hardworking,
+                  entrepreneurial, and optimistic &mdash; Alex embodies those
                   qualities and will be a strong and responsive representative
-                  of Houston in Congress. I’m proud to endorse Alex because I
+                  of Houston in Congress. I'm proud to endorse Alex because I
                   know he will champion the issues I fought for here in Texas:
                   supporting small business growth, fixing our broken
                   immigration system, and expanding access to quality education
-                  for all Texas children.”
+                  for all Texas children."
                 </p>
               </div>
             </div>
@@ -42,14 +42,14 @@ export default class Endorsements extends React.Component {
               <h2 className="mb2">Anne Sung, HISD Trustee: </h2>
               <div>
                 <p>
-                  “Alex believes that an excellent public education should be a
-                  right for every child, regardless of their zip code. He’s put
+                  "Alex believes that an excellent public education should be a
+                  right for every child, regardless of their zip code. He's put
                   that belief into action for over a decade as the founder of a
                   nonprofit that has provided educational mentorship and other
-                  support to over 3,000 refugee youth in our community. I’ve
+                  support to over 3,000 refugee youth in our community. I've
                   been proud to work alongside Alex to help improve the lives of
                   all Houstonians, and I know that he will fight tirelessly in
-                  Congress to create opportunities for all Houston families.”
+                  Congress to create opportunities for all Houston families."
                 </p>
               </div>
             </div>
@@ -57,24 +57,24 @@ export default class Endorsements extends React.Component {
               <h2 className="mb2">Anna Eastman, HISD Trustee:</h2>
               <div>
                 <p>
-                  “When we work together, we can achieve great things for our
+                  "When we work together, we can achieve great things for our
                   children, families, and schools. Alex Triantaphyllis knows how
                   to bring people together and how to collaborate to get things
-                  done. He’s been doing that for most of his career through his
-                  work right here in the Houston community. That’s why I’m proud
-                  to endorse Alex to represent Texas’s 7th district in Congress.
+                  done. He's been doing that for most of his career through his
+                  work right here in the Houston community. That's why I'm proud
+                  to endorse Alex to represent Texas's 7th district in Congress.
                 </p>
                 <p>
                   {" "}
-                  “Alex understands the importance of providing a great
+                  "Alex understands the importance of providing a great
                   education for every child and that, all too often, the quality
-                  of a student’s education is determined by their zip code. He
+                  of a student's education is determined by their zip code. He
                   is deeply rooted in Houston and has already been an
                   outstanding partner in doing the necessary hard work to make
                   our community stronger and more welcoming. When I started my
                   journey as a Houston Independent School District Trustee, I
                   did it because I wanted to be a voice for children and
-                  families. Now I trust Alex to be our voice in Congress.”
+                  families. Now I trust Alex to be our voice in Congress."
                 </p>
               </div>
             </div>
@@ -82,8 +82,8 @@ export default class Endorsements extends React.Component {
               <h2 className="mb2">Michael Skelly & Anne Whitlock:</h2>
               <div>
                 <p>
-                  “Alex Triantaphyllis is the strongest candidate to take on
-                  Congressman John Culberson and win in Texas’s 7th
+                  "Alex Triantaphyllis is the strongest candidate to take on
+                  Congressman John Culberson and win in Texas's 7th
                   congressional district. He is a tireless worker who has spent
                   most of his career working in the Houston community. Alex has
                   blue-chip private sector experience, sterling educational
@@ -94,11 +94,11 @@ export default class Endorsements extends React.Component {
                   Convention Center.
                 </p>
                 <p>
-                  “Alex is exactly what we want in a public servant. He is as
+                  "Alex is exactly what we want in a public servant. He is as
                   grounded as he is smart, and he and his wife, Christina, are
                   everything we want in the emerging generation of Houston
                   leaders. Anne and I are proudly and enthusiastically
-                  supporting our good friend, Alex.”
+                  supporting our good friend, Alex."
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default class Endorsements extends React.Component {
                 <li>Nory Angel, Nonprofit executive</li>
                 <li>Ann Barnes, Doctor and health advocate</li>
                 <li>Matt Barnes, Education advocate</li>
-                <li>Adeeb Barqawi, President & CEO — ProUnitas, Inc.</li>
+                <li>Adeeb Barqawi, President & CEO &mdash; ProUnitas, Inc.</li>
                 <li>Joseph Batdorf, Local business owner</li>
                 <li>Jill Campbell, Immigration attorney</li>
                 <li>Andrea Caracostis, Community health advocate</li>
@@ -144,7 +144,7 @@ export default class Endorsements extends React.Component {
                 </li>
                 <li>Cary Kottler, Renewable energy executive</li>
                 <li>Meredith Kottler, Educator and refugee advocate</li>
-                <li>Brenda Kirk, CEO — Vision Weavers Consulting</li>
+                <li>Brenda Kirk, CEO &mdash; Vision Weavers Consulting</li>
                 <li>
                   Stan Marek, Business leader and immigration reform advocate
                 </li>
@@ -170,7 +170,7 @@ export default class Endorsements extends React.Component {
                 <li>
                   Dr. Assata Richards, Social justice and housing advocate
                 </li>
-                <li>Marisol Valero, Immigration and women’s rights advocate</li>
+                <li>Marisol Valero, Immigration and women's rights advocate</li>
                 <li>Celia & Larry Veselka, Democratic activists</li>
                 <li>Kate Vickery, Nonprofit leader</li>
                 <li>Lauren West, Refugee advocate</li>
