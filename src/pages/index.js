@@ -106,9 +106,9 @@ export default class Index extends React.Component {
                   <p>
                     {" "}
                     Alex is also the founder of PAIR: Partnership for the
-                    Advancement &amp; Immersion of Refugees &#8212; a nonprofit
-                    that provides educational mentorship to refugee youth
-                    resettled in the Houston area.
+                    Advancement &amp; Immersion of Refugees - a nonprofit that
+                    provides educational mentorship to refugee youth resettled
+                    in the Houston area.
                   </p>
                   <p>
                     <strong>A LEADER WHO BRINGS PEOPLE TOGETHER</strong>
