@@ -7,7 +7,7 @@ path: equality
 cardType: horizontal
 ---
 
-## Continuing our fight to ensure equal fustice for all
+## Continuing our fight to ensure equal justice for all
 
 Alex knows that no value is more sacred in our country than equality. Alex has
 always been and always will be a firm advocate for and ally to Houston's LGBTQ
