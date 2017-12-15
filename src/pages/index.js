@@ -119,7 +119,7 @@ export default class Index extends React.Component {
                     they face are at the core of how Alex does his job.
                   </p>
                   <p>
-                    After working for a top Wall Street firm, he chose to pursue
+                    After working in finance and consulting, he chose to pursue
                     a career advocating for community members in the Houston
                     area. Alex has brought his experience in the legal,
                     business, and nonprofit sectors to his work on small
