@@ -17,6 +17,7 @@ dependencies:
     - npm install gatsby@1.1 -g
     - npm install
     - gatsby --version
+    - rm -rf .cache
     - npm run build
     - docker build -t alext .
     - docker tag alext danweaver06/alext
