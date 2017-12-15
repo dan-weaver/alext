@@ -258,6 +258,13 @@ export default class Template extends React.Component {
               >
                 NEWS
               </Link>
+              <Link
+                className="pv3 white"
+                onClick={this.closeBurger.bind(this)}
+                to={`/endorsements`}
+              >
+                ENDORSEMENTS
+              </Link>
               <a
                 className="pv3 white"
                 href="https://secure.actblue.com/contribute/page/alexthomepage"
