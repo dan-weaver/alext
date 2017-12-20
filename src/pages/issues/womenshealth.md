@@ -15,7 +15,7 @@ importance of access to affordable, high-quality healthcare for all women. In
 Congress, he will fight for policies that allow women to have the freedom to
 make their own healthcare choices.
 
-### Protective reproductive rights
+### Protecting reproductive rights
 
 Alex supports the right of women to make their own healthcare decisions without
 government interference. In Congress, he will work to protect women's right to
