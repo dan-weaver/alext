@@ -1545,7 +1545,7 @@ header.default .tagline {
 @media screen and (max-width: 800px) and (orientation: portrait) {
   section.banner {
     background-position: calc(50% - 120px) 65%;
-    background-size: 300%;
+    /* background-size: 300%; */
   }
 
   section.banner .old-form {
@@ -1734,7 +1734,7 @@ header.default .tagline {
 }
 
 .image-banner {
-  background-image: url(../images/alex-banner2.jpg);
+  background-image: url(../images/alex-banner232.jpg);
 }
 .issue-button-blue {
   background-color: #29aae1;
