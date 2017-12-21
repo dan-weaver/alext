@@ -630,6 +630,7 @@ section.banner {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
+  background-position: 0 0;
   background-size: cover;
 }
 
@@ -660,7 +661,7 @@ section.banner .old-form .image {
   max-width: 307px;
   height: 0;
   padding-bottom: 42%;
-  background: url("../images/logo-large-blue.svg") no-repeat center;
+  background: url("../images/alex-logo2.png") no-repeat center;
   background-size: contain;
   margin: 0 auto 30px;
 }
@@ -1449,7 +1450,7 @@ header.default .tagline {
   section.banner .old-form .image {
     max-width: 190px;
     padding-bottom: 26%;
-    background: url("../images/logo-large-blue-mobile.svg") no-repeat center !important;
+    background: url("../images/alex-logo2.png") no-repeat center !important;
     background-size: contain !important;
   }
 
@@ -1729,11 +1730,11 @@ header.default .tagline {
 }
 
 .image-about {
-  background-image: url(../images/ALEX-T-AboutNew.jpg);
+  background-image: url(../images/alex-fam2.jpg);
 }
 
 .image-banner {
-  background-image: url(../images/ALEX-T-heroLG2a.jpg);
+  background-image: url(../images/alex-banner2.jpg);
 }
 .issue-button-blue {
   background-color: #29aae1;
