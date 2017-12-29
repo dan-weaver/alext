@@ -3,7 +3,7 @@ order: 4
 title: Healthcare
 path: healthcare
 buttonTitle: Healthcare
-subtitle: Acheiving quality care and cost-effective coverage
+subtitle: Achieving quality care and cost-effective coverage
 type: issue
 cardType: horizontal
 ---
