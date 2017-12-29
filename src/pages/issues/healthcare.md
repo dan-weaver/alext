@@ -49,7 +49,7 @@ to create a sustainable, cost-effective healthcare system.
 Alex will work with leaders and experts across the political spectrum to explore
 all possible approaches to achieve affordable coverage for all Americans.
 
-### Reducingg costs and improving quality
+### Reducing costs and improving quality
 
 Our healthcare payment system is fragmented and inefficient. Currently,
 thousands of insurance plans have their own overhead and operational costs, and
