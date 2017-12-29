@@ -2,7 +2,7 @@
 order: 11
 type: issue
 title: Equality
-subtitle: Continuing our fight to ensure equal fustice for all
+subtitle: Continuing our fight to ensure equal justice for all
 path: equality
 cardType: horizontal
 ---
