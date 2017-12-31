@@ -8,7 +8,7 @@ path: womenshealth
 
 ## Protecting choice and access to care
 
-Alex's strong belief is that decisions about women’s health should be between
+Alex's strong belief is that decisions about women's health should be between
 women and their physicians. Our government should not encroach upon women's
 decisions about their health and their families. Alex takes seriously the
 importance of access to affordable, high-quality healthcare for all women. In
@@ -28,7 +28,7 @@ and no-cost contraception offered under the Affordable Care Act.
 Alex will work to increase funding for the federal Title X program, which
 ensures access to family planning and preventive health services. Since the
 Texas Legislature slashed funding for family planning services in 2011, a
-quarter of the state’s family planning clinics have been forced to close. As a
+quarter of the state's family planning clinics have been forced to close. As a
 result, countless Texas women have lost access to affordable birth control and
 essential preventive services like cervical and breast cancer screenings. Alex
 will resist efforts to defund family planning programs so that all women have

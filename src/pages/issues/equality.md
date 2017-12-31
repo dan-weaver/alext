@@ -11,13 +11,13 @@ cardType: horizontal
 
 Alex knows that no value is more sacred in our country than equality. Alex has
 always been and always will be a firm advocate for and ally to Houston's LGBTQ
-community, and for the rights of all individuals nationwide. We’ve made
+community, and for the rights of all individuals nationwide. We've made
 important progress in recent years, most notably with the landmark Obergefell v.
 Hodges U.S. Supreme Court decision ensuring marriage equality for all. We must
 be vigilant in protecting this progress while continuing our fight to ensure
 equal justice for all Americans.
 
-In Congress, Alex will proudly co-sponsor the Equality Act — bipartisan
+In Congress, Alex will proudly co-sponsor the Equality Act &mdash; bipartisan
 legislation that will protect LGBTQ individuals from discrimination in the
 workplace, public spaces, and elsewhere. Alex will be an advocate for protecting
 the LGBTQ community from violence, one of several intolerable forms of

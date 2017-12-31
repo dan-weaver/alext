@@ -89,7 +89,7 @@ export default class Index extends React.Component {
                 <div className="richtext">
                   <p>
                     <strong>DEEP ROOTS IN OUR COMMUNITY</strong>
-                    <br />The son of a fourth-generation Texan mother and Greek
+                    <br />The son of a fourth-generation Texan mother and a Greek
                     immigrant father, Alex Triantaphyllis was born and raised in
                     Houston, where he is an active member of the community
                     through the Welcoming Houston initiative, the City of
