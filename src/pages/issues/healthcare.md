@@ -27,10 +27,10 @@ John Culberson and other House Republicans voted for a disastrous bill that
 would result in 23 million Americans losing their healthcare coverage, raise
 premiums in Texas by 78%, endanger protections for people with preexisting
 conditions, and do away with mandatory coverage for maternity care and
-preventive health services—all while implementing an age tax that would penalize
+preventive health services&mdash;all while implementing an age tax that would penalize
 seniors.
 
-Republicans in Washington have co-opted the word “choice” to try to sneak a tax
+Republicans in Washington have co-opted the word "choice" to try to sneak a tax
 cut for the rich by the American people. The Affordable Care Act provides
 coverage to millions more Americans, but improvements are needed to address
 root-cause challenges within the system. Alex will work tirelessly to address
@@ -68,7 +68,7 @@ changes to our healthcare system. Potential examples include:
 * Paying for value in Medicare by holding physician fees constant, adjusting
   rates for overpriced services, and rewarding providers that are willing to be
   held accountable for health outcomes
-* Emphasizing evidence-based policies that improve patients’ healthcare
+* Emphasizing evidence-based policies that improve patients' healthcare
   experience, enhance health outcomes, and save money for both patients and
   taxpayers
 * Tackling drug prices by allowing Medicare to negotiate prices directly with

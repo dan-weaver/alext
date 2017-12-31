@@ -29,7 +29,7 @@ assistance for those who want to start or grow small businesses. In addition, he
 led the Welcoming Houston Task Force, a citywide initiative that aims to make
 our community more welcoming to immigrant Houstonians to the benefit of everyone
 in the region. In Congress, Alex will fight for these ideals while representing
-one of the country’s most diverse cities.
+one of the country's most diverse cities.
 
 We cannot take the economic impact of immigrants lightly. In recent years,
 nearly half of all Fortune 500 companies have been founded by immigrants or

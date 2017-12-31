@@ -12,7 +12,7 @@ cardType: horizontal
 
 Houston's economy is one of the largest and most diverse in the nation. We live
 in a truly international city that features a robust energy sector, a vibrant
-arts scene, the nation’s second busiest port, the most diverse population, and
+arts scene, the nation's second busiest port, the most diverse population, and
 the largest medical center in the country.
 
 Despite Houston's limitless potential, the recent oil downturn has left many
@@ -39,7 +39,7 @@ access to loans and technical assistance they need to be successful.
 
 To improve entrepreneurs' ability to start and grow their businesses, Alex will
 partner with small business programs across the Houston area and make sure that
-Congress supports smaller, community-oriented banks—institutions that are more
+Congress supports smaller, community-oriented banks&mdash;institutions that are more
 likely to lend to and build longer-term relationships with small businesses.
 
 Alex will work to ensure that our community's small businesses have the
@@ -49,7 +49,7 @@ opportunity to benefit from:
 * Reduced costs and other barriers, including the burden that healthcare costs
   put on small business owners
 * Expanded access to capital, including venture capital, since Houston has all
-  of the other elements to be one of the country’s major startup hubs
+  of the other elements to be one of the country's major startup hubs
 * "Small business hubs" that increase access to essential resources, such as
   legal and accounting assistance
 
