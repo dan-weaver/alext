@@ -3,7 +3,7 @@ order: 3
 title: Transportation and Infrastructure
 path: infrastructure
 buttonTitle: Infrastructure
-subtitle: Developing forard-looking transportation and other infrastructure
+subtitle: Developing forward-looking transportation and other infrastructure
 type: issue
 ---
 
