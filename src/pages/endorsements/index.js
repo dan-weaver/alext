@@ -38,6 +38,24 @@ export default class Endorsements extends React.Component {
                 </p>
               </div>
             </div>
+            <div>
+              <h2 className="mb2">State Rep. Armando Walle:</h2>
+              <p>
+                "Alex Triantaphyllis is a fighter with a long record of service
+                to the Houston region. He continues to grow his long track
+                record of working on difficult issues that affect all
+                Houstonians, especially those affecting immigrant and Latino
+                communities. Alex has helped create good jobs, grow small
+                businesses, and put thousands of immigrant Houstonians on the
+                path to citizenship, allowing them to lead more productive lives
+                in our community. In our work together, I have witnessed his
+                resolve and commitment to making Houston a better, more
+                welcoming place for everyone. Alex has already been creating
+                more opportunity and standing up for the values and the people
+                of the Houston area--it's time to send him to Washington to do
+                the same."
+              </p>
+            </div>
             <div className="pa2 mb3">
               <h2 className="mb2">Anne Sung, HISD Trustee: </h2>
               <div>
@@ -79,6 +97,24 @@ export default class Endorsements extends React.Component {
               </div>
             </div>
             <div className="pa2 mb3">
+              <h2 className="mb2">UNITE HERE Local 23:</h2>
+              <div>
+                <p>
+                  With the rights of working families being taken away with one
+                  piece of anti-worker legislation after another, this election
+                  cycle is one of the most important in our lifetime. Our union
+                  has worked with Alex on many community-based initiatives and
+                  we have witnessed his resolve and commitment to supporting
+                  working families. Now more than ever, we need that same
+                  resolve and commitment in the United States Congress. For this
+                  reason, on behalf of UNITE HERE Local 23 and the more than
+                  2,500 hospitality workers we represent in Houston, we are
+                  excited to announce our endorsement of Alex's candidacy for
+                  U.S. House of Representatives Texas District 7.
+                </p>
+              </div>
+            </div>
+            <div className="pa2 mb3">
               <h2 className="mb2">Michael Skelly & Anne Whitlock:</h2>
               <div>
                 <p>
@@ -102,6 +138,10 @@ export default class Endorsements extends React.Component {
                 </p>
               </div>
             </div>
+            {/* <div>
+              <h2>Organizational Endorsements</h2>
+
+            </div> */}
             <div>
               <h2>Community Leaders for Alex Triantaphyllis:</h2>
               <ul className="list pa3">

@@ -9,19 +9,9 @@ type: issue
 
 ## Developing forward-looking transportation and other infrastructure
 
-We need infrastructure that creates more transportation choices for residents as
-our region grows. This investment will create jobs, bolster our regional
-economy, increase daily productivity, and improve quality of life. Houstonians
-know that we need to get our people to work on time and can move the goods we
-produce here in Houston out to the rest of the world. Houstonians want
-transportation options, a trend that will only increase as more young people
-return or move to Houston.
+We need infrastructure that creates more transportation choices for residents as our region grows. This investment will create jobs, bolster our regional economy, increase daily productivity, and improve our quality of life. Houstonians know that we need to get our people to work on time and move the goods we produce here in Houston out to the rest of the world.
 
-In Congress, Alex will push for forward-looking investments in transportation,
-as well as other infrastructure plans that create the kind of system that will
-benefit the Houston area throughout the 21st century. He will also work to make
-sure that we are doing everything we can from the federal level to address
-flooding issues in the region.
+In Congress, Alex will push for forward-looking investments in transportation as well as other infrastructure plans that create the kind of system that will benefit the Houston area throughout the 21st century. He will also work to make sure that we are doing everything we can at the federal level to address flooding issues in the region.
 
 ### Increasing transportation options
 
@@ -47,11 +37,7 @@ but also local control over how that money is spent.
 The gas tax, traditionally the main revenue source for the federal
 transportation program, no longer comes close to paying for highway
 expenditures. In recent years, large transfers of general tax dollars have been
-necessary to keep the Highway Trust Fund afloat. Despite these infusions, Texans
-send more gas tax money to Washington than it gets back in transportation
-funding, an unfair and unreasonable outcome for a growing state with acute
-mobility needs. This poorly serves Texas families that pay their fair share and
-is an issue Alex will address head-on in Congress.
+necessary to keep the Highway Trust Fund afloat. Despite these infusions, Texans send more gas tax money to Washington than they get back in transportation funding, an unfair and unreasonable outcome for a growing state with acute mobility needs. This poorly serves Texas families who pay their fair share and is an issue Alex will address head-on in Congress.
 
 The federal government has an important role in funding the maintenance of the
 interstate highway system. However, Washington is not the right place to make

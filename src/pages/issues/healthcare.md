@@ -46,8 +46,7 @@ Artificially high prices are prevalent in pharmaceuticals and medical supplies,
 among other areas. We must tackle the issue of high costs head-on if we expect
 to create a sustainable, cost-effective healthcare system.
 
-Alex will work with leaders and experts across the political spectrum to explore
-all possible approaches to achieve affordable coverage for all Americans.
+Alex will work with leaders and experts across the political spectrum to explore all possible approaches to achieving affordable coverage for all Americans.
 
 ### Reducing costs and improving quality
 
@@ -71,9 +70,8 @@ changes to our healthcare system. Potential examples include:
 * Emphasizing evidence-based policies that improve patients' healthcare
   experience, enhance health outcomes, and save money for both patients and
   taxpayers
-* Tackling drug prices by allowing Medicare to negotiate prices directly with
-  pharmaceutical companies, and by requiring pharmaceutical companies to clearly
-  and honestly report R&D, marketing, and advertising costs
+* Tackling drug prices by allowing Medicare to negotiate prices directly with pharmaceutical companies and by requiring pharmaceutical
+  companies to clearly and honestly report R&D, marketing, and advertising costs
 
 ### Increasing transparency
 

@@ -46,7 +46,7 @@ Alex will work to ensure that our community's small businesses have the
 opportunity to benefit from:
 
 * Entrepreneurship training and technical support
-* Reduced costs and other barriers, including the burden that healthcare costs
+* Reduced costs and barriers, including the burden that healthcare costs
   put on small business owners
 * Expanded access to capital, including venture capital, since Houston has all
   of the other elements to be one of the country's major startup hubs
@@ -55,11 +55,7 @@ opportunity to benefit from:
 
 ### Creating real, sustainable job growth that reflects the future of our economy
 
-While investor confidence in the economy may be high, we are seeing decreased
-confidence from workers who need better access to training opportunities and
-better visibility regarding the highest-opportunity industries for the future.
-Alex will help community members achieve their full potential by working to
-support:
+While investor confidence in the economy may be high, we are seeing decreased confidence from workers who need better access to training opportunities and better visibility regarding the highest-opportunity industries for the future. Alex will help community members achieve their full potential by working to:
 
 * Leverage both employers and nonprofit organizations to develop locally guided
   workforce programs that address unemployment and underemployment issues
@@ -68,6 +64,4 @@ support:
   community health workers, probation officers, home aides and the like
 * Develop more opportunities for people to receive digital skills training so
   that they can more easily adapt to our changing economy
-* Expand support for two-year technical training programs at community colleges
-  and high-quality apprenticeships that prepare students with the skills to find
-  good-paying jobs at a fraction of the cost of four-year colleges
+* Expand support for two-year technical training programs at community colleges and high-quality apprenticeships that prepare students with the skills to find well-paying jobs at a fraction of the cost of four-year colleges

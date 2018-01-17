@@ -66,13 +66,15 @@ export default class Index extends React.Component {
 
         <section className="declaration">
           <div className="container">
-            I'm running because the people of Texas's 7th Congressional District
-            deserve a representative who is already a{" "}
-            <strong>partner in the community</strong>, who will make{" "}
-            <strong>smart investments</strong> that create opportunities for all
-            families, and who{" "}
-            <strong>will make Washington more like Houston</strong> in the
-            process.
+            I'm running for Congress to fight to take our country back from
+            Donald Trump, starting with Texas's 7th Congressional District. I'll
+            stand up against hate and bigotry and against insider politicians,
+            like John Culberson, who enable Trump. I'll do what's right for our
+            community and our country by working to protect a woman’s right to
+            choose, ensure every child can attend a great public school, provide
+            every American with access to high-quality, affordable healthcare,
+            and welcoming our immigrant community to participate in the American
+            Dream.
             <br />
             <br />-<span> Alex Triantaphyllis </span>
           </div>
@@ -89,12 +91,12 @@ export default class Index extends React.Component {
                 <div className="richtext">
                   <p>
                     <strong>DEEP ROOTS IN OUR COMMUNITY</strong>
-                    <br />The son of a fourth-generation Texan mother and a Greek
-                    immigrant father, Alex Triantaphyllis was born and raised in
-                    Houston, where he is an active member of the community
-                    through the Welcoming Houston initiative, the City of
-                    Houston's Equitable Economic Development Committee, and the
-                    Plan Downtown Steering Committee, among other efforts.
+                    <br />The son of a fourth-generation Texan mother and a
+                    Greek immigrant father, Alex Triantaphyllis was born and
+                    raised in Houston, where he is an active member of the
+                    community through the Welcoming Houston initiative, the City
+                    of Houston's Equitable Economic Development Committee, and
+                    the Plan Downtown Steering Committee, among other efforts.
                   </p>
                   <p>
                     He is currently the Director of Immigration and Economic
@@ -160,6 +162,21 @@ export default class Index extends React.Component {
               </div>
             </div>
           </div>
+        </section>
+        <section id="social">
+          <a
+            data-tweet-limit="3"
+            data-cards="hidden"
+            className="twitter-timeline"
+            href="https://twitter.com/alextfortexas"
+          >
+            Tweets by Alex
+          </a>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          />
         </section>
 
         <section id="involved">
