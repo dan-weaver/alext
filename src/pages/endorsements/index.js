@@ -86,7 +86,7 @@ export default class Endorsements extends React.Component {
                   {" "}
                   "Alex understands the importance of providing a great
                   education for every child and that, all too often, the quality
-                  of a student's education is determined by their zip code. He
+                  of a student's education is determined by his or her zip code. He
                   is deeply rooted in Houston and has already been an
                   outstanding partner in doing the necessary hard work to make
                   our community stronger and more welcoming. When I started my

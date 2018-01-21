@@ -18,11 +18,7 @@ need a nurturing and stimulating environment from the start.
 Research shows that those who experience quality care and learning achieve
 better education, health, social, and economic outcomes throughout their lives.
 Children, families, and society as a whole are all better off as a result.
-Simply put, investing in our youngest children is a rare opportunity that is at
-once the right investment morally, economically, and for the competitive
-well-being of our nation. Congress can support the various systems that reach
-families of young children when they are in the most vulnerable financial time,
-balancing astronomically high childcare costs with budding careers.
+Simply put, investing in our youngest children is a rare opportunity that is the right investment morally, economically, and for the competitive well-being of our nation. Congress should support the various systems that are available to parents of young children when families are vulnerable financially, balancing astronomically high childcare costs with budding careers.
 
 ### Paid family leave
 
@@ -46,29 +42,22 @@ issue.
 
 ### High-quality, affordable childcare and preschool
 
-Quality childcare is important for children, who benefit from strong early
-learning experiences. It also enables more Americans to readily reenter our
+Quality childcare is important for children, who benefit from strong early learning experiences.
+It also enables more Americans to readily reenter our
 workforce after the birth of their child, improving family economic well-being
 and our nation's competitiveness. Too many families lack access to child care,
 Head Start or preschool, and too many children attend early childhood programs
 that are lacking in quality and do not lay a strong foundation for future
 learning.
 
-Congress should focus on improving both access and quality by expanding and
-making the Child and Dependent Care Tax Credit refundable. This change should be
-paired with quality improvement initiatives, such as the preschool development
-block grants and quality rating systems, as well as technical assistance for
-childcare providers, so that our children can benefit from stimulating learning
-environments from the start.
+This change should be paired with quality improvement initiatives such as preschool development block grants and quality rating systems as well as technical assistance for childcare providers, so that our children can benefit from stimulating learning environments from the start.
 
 ### Community support for parents
 
 New parents need support in their communities to make sure they have the
 information they want and need to nurture and nourish their young learners.
-Voluntary home visiting programs are proven to be one of the most effective
-interventions for improving family and child outcomes by supporting parents to
-be the best advocate for their child's learning and development in the early
-years.
+Voluntary home visiting programs are proven to be one of the most effective interventions for improving family and child outcomes by supporting parents to be the best advocates for their child's learning and development in the early years.
+Congress should continue to support proven programs like these, in addition to experimenting with new, lower-cost ways to reach families at pediatric visits and in other relevant contexts during their children's earliest years.
 
 Congress should continue to support proven programs like these, in addition to
 experimenting with new, lower-cost ways to reach families at pediatric visits

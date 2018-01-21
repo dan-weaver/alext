@@ -18,9 +18,7 @@ Congress should ensure that students know the true return-on-investment of
 post-secondary education options and take action to help those struggling with
 debt regain sound financial footing.
 
-We should also make it easier for students and their families to gather good
-information on the performance of post-secondary programs by expanding efforts
-like the College Scorecard to include employment and long-term student outcomes.
+We should make it easier for students and their families to gather good information on the performance of post-secondary programs by expanding efforts like the College Scorecard to include employment and long-term student outcomes.
 
 We should also ease the burden of those struggling with student loan debt by
 allowing individuals to refinance their debt at current interest rates&mdash;giving

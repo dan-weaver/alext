@@ -12,11 +12,7 @@ cardType: horizontal
 Since our nation's founding, we have welcomed immigrants and helped integrate
 them into our nation while enabling them to enrich our country with the customs
 and cultures of their prior homes. Alex will work tirelessly to maintain the
-values of freedom, diversity, and unity that our nation was founded upon. As the
-son of an immigrant one side of his family and a fourth-generation Texan on the
-other&mdash;and as someone who has worked with immigrant communities directly&mdash;Alex
-recognizes the value that immigrants contribute to our economic, cultural, and
-educational fabric in Houston and across the country.
+values of freedom, diversity, and unity that our nation was founded upon. As the son of an immigrant on one side of his family and a fourth-generation Texan on the other&mdash;and as someone who has worked with immigrant communities directly&mdash;Alex recognizes the value that immigrants contribute to our economic, cultural, and educational fabric in Houston and across the country.
 
 It is no secret that our immigration system is broken. Alex rejects President
 Trump's attempt to bar entire groups of people seeking better opportunities for
@@ -47,8 +43,4 @@ we'll also create safer communities, making it easier for law enforcement to do
 its job, since immigrants will feel comfortable reporting crimes and working as
 partners with law enforcement.
 
-We've seen far too many attempts to use fear to drive the immigration debate. In
-a changing economy and a changing world, we must develop smart policies that
-leverage immigration as a positive catalyst for economic growth rather than a
-threat, while letting law enforcement continue their hard work of focusing on
-keeping communities safe.
+We've seen far too many attempts to use fear to drive the immigration debate. In a changing economy and a changing world, we must develop smart policies that leverage immigration as a positive catalyst for economic growth rather than a threat, while letting law enforcement continue focusing on keeping communities safe.

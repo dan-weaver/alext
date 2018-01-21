@@ -76,5 +76,4 @@ to discriminate against lower-income and minority voters, instead of its claimed
 purpose of preventing voter fraud. We must fight against these types of
 dangerous efforts to discourage and exclude voters.
 
-Alex is also a proponent of states' expanding early voting hours and polling
-locations and instituting automatic voter registration.
+Alex is also a proponent of states expanding early voting hours and polling locations and instituting automatic voter registration.
