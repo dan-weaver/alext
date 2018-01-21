@@ -137,9 +137,9 @@ export default class Endorsements extends React.Component {
               <h2>Organizational Endorsements:</h2>
               <ul className="list pa3">
                 <li>
-                  <h3>UNITE HERE Local 23:</h3>
-                  <div>
-                    “With the rights of working families being taken away with
+                  <h3 className="mb2">UNITE HERE Local 23:</h3>
+                  <div className="mb2">
+                    "With the rights of working families being taken away with
                     one piece of anti-worker legislation after another, this
                     election cycle is one of the most important in our lifetime.
                     Our union has worked with Alex on many community-based
@@ -149,8 +149,8 @@ export default class Endorsements extends React.Component {
                     Congress. For this reason, on behalf of UNITE HERE Local 23
                     and the more than 2,500 hospitality workers we represent in
                     Houston, we are excited to announce our endorsement of
-                    Alex’s candidacy for U.S. House of Representatives Texas
-                    District 7.”
+                    Alex's candidacy for U.S. House of Representatives Texas
+                    District 7."
                   </div>
                 </li>
                 <li>
