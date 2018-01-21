@@ -38,7 +38,7 @@ export default class Endorsements extends React.Component {
                 </p>
               </div>
             </div>
-            <div>
+            <div className="pa2 mb3">
               <h2 className="mb2">State Rep. Armando Walle:</h2>
               <p>
                 "Alex Triantaphyllis is a fighter with a long record of service
@@ -54,6 +54,19 @@ export default class Endorsements extends React.Component {
                 more opportunity and standing up for the values and the people
                 of the Houston area--it's time to send him to Washington to do
                 the same."
+              </p>
+            </div>
+            <div className="pa2 mb3">
+              <h2 className="mb2">Houston City Council Member Mike Laster:</h2>
+              <p>
+                “Alex Triantaphyllis has an impressive track record of service
+                to the Houston community. His dedication in the communities of
+                southwest Houston makes him an effective advocate who can
+                deliver real results for Houstonians in Congress. The area I
+                represent is one of the most diverse areas in America--we need a
+                representative in Congress who will advocate for everyone in
+                this community. We can trust Alex to stand up to honor our best
+                values and give a voice to all Houstonians.”
               </p>
             </div>
             <div className="pa2 mb3">
@@ -86,31 +99,13 @@ export default class Endorsements extends React.Component {
                   {" "}
                   "Alex understands the importance of providing a great
                   education for every child and that, all too often, the quality
-                  of a student's education is determined by his or her zip code. He
-                  is deeply rooted in Houston and has already been an
+                  of a student's education is determined by his or her zip code.
+                  He is deeply rooted in Houston and has already been an
                   outstanding partner in doing the necessary hard work to make
                   our community stronger and more welcoming. When I started my
                   journey as a Houston Independent School District Trustee, I
                   did it because I wanted to be a voice for children and
                   families. Now I trust Alex to be our voice in Congress."
-                </p>
-              </div>
-            </div>
-            <div className="pa2 mb3">
-              <h2 className="mb2">UNITE HERE Local 23:</h2>
-              <div>
-                <p>
-                  With the rights of working families being taken away with one
-                  piece of anti-worker legislation after another, this election
-                  cycle is one of the most important in our lifetime. Our union
-                  has worked with Alex on many community-based initiatives and
-                  we have witnessed his resolve and commitment to supporting
-                  working families. Now more than ever, we need that same
-                  resolve and commitment in the United States Congress. For this
-                  reason, on behalf of UNITE HERE Local 23 and the more than
-                  2,500 hospitality workers we represent in Houston, we are
-                  excited to announce our endorsement of Alex's candidacy for
-                  U.S. House of Representatives Texas District 7.
                 </p>
               </div>
             </div>
@@ -137,6 +132,34 @@ export default class Endorsements extends React.Component {
                   supporting our good friend, Alex."
                 </p>
               </div>
+            </div>
+            <div className="pa mb3">
+              <h2>Organizational Endorsements:</h2>
+              <ul className="list pa3">
+                <li>
+                  <h3>UNITE HERE Local 23:</h3>
+                  <div>
+                    “With the rights of working families being taken away with
+                    one piece of anti-worker legislation after another, this
+                    election cycle is one of the most important in our lifetime.
+                    Our union has worked with Alex on many community-based
+                    initiatives and we have witnessed his resolve and commitment
+                    to supporting working families. Now more than ever, we need
+                    that same resolve and commitment in the United States
+                    Congress. For this reason, on behalf of UNITE HERE Local 23
+                    and the more than 2,500 hospitality workers we represent in
+                    Houston, we are excited to announce our endorsement of
+                    Alex’s candidacy for U.S. House of Representatives Texas
+                    District 7.”
+                  </div>
+                </li>
+                <li>
+                  <h3>Harris County Tejano Democrats</h3>
+                </li>
+                <li>
+                  <h3>Area 5 Democrats</h3>
+                </li>
+              </ul>
             </div>
             {/* <div>
               <h2>Organizational Endorsements</h2>
