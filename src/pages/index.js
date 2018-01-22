@@ -66,15 +66,19 @@ export default class Index extends React.Component {
 
         <section className="declaration">
           <div className="container">
-            I'm running for Congress to fight to take our country back from
-            Donald Trump, starting with Texas's 7th Congressional District. I'll
-            stand up against hate and bigotry and against insider politicians,
-            like John Culberson, who enable Trump. I'll do what's right for our
-            community and our country by working to protect a woman's right to
-            choose, ensure every child can attend a great public school, provide
-            every American with access to high-quality, affordable healthcare,
-            and welcoming our immigrant community to participate in the American
-            Dream.
+            <p>
+              I'm running for Congress to fight to take our country back from
+              Donald Trump, starting with Texas's 7th Congressional District.
+              I'll stand up against hate and bigotry and against insider
+              politicians, like John Culberson, who enable Trump.
+            </p>
+            <p>
+              I'll do what's right for our community and our country by working
+              to protect a woman's right to choose; ensure every child can
+              attend a great public school; provide every American with access
+              to high-quality, affordable healthcare; and welcome our immigrant
+              community to participate in the American Dream.
+            </p>
             <br />
             <br />-<span> Alex Triantaphyllis </span>
           </div>
