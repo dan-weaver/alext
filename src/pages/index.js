@@ -167,22 +167,6 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
-        <section id="social">
-          <a
-            data-tweet-limit="3"
-            data-cards="hidden"
-            className="twitter-timeline"
-            href="https://twitter.com/alextfortexas"
-          >
-            Tweets by Alex
-          </a>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          />
-        </section>
-
         <section id="involved">
           <div className="container">
             <div className="side">
