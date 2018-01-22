@@ -70,7 +70,7 @@ export default class Index extends React.Component {
             Donald Trump, starting with Texas's 7th Congressional District. I'll
             stand up against hate and bigotry and against insider politicians,
             like John Culberson, who enable Trump. I'll do what's right for our
-            community and our country by working to protect a woman’s right to
+            community and our country by working to protect a woman's right to
             choose, ensure every child can attend a great public school, provide
             every American with access to high-quality, affordable healthcare,
             and welcoming our immigrant community to participate in the American
