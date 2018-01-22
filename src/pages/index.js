@@ -80,7 +80,7 @@ export default class Index extends React.Component {
               community to participate in the American Dream.
             </p>
             <br />
-            <br />-<span> Alex Triantaphyllis </span>
+            <span> Alex Triantaphyllis </span>
           </div>
         </section>
 
