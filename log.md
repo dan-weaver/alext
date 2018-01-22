@@ -7,3 +7,5 @@ more typos
 adding equality section
 
 italicized typo
+
+removed twitter embed
