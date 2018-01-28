@@ -1484,13 +1484,19 @@ header.default .tagline {
     --------------------------------------------------*/
   section.banner,
   section.banner .container {
-    height: calc(100vh - 60px);
+    height: 350px;
   }
 
+  section.banner {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: conver;
+  }
   section.banner .old-form .image {
     max-width: 190px;
     padding-bottom: 26%;
-    background: url("../images/alex-logo2.png") no-repeat center !important;
+    background: url("../images/video-thumb.png") no-repeat center !important;
     background-size: contain !important;
   }
 
@@ -1582,12 +1588,13 @@ header.default .tagline {
 /* Small and Portrait
 --------------------------------------------------*/
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
+@media screen and (max-width: 375px) and (orientation: portrait) {
   section.banner {
-    background-position: calc(50% - 120px) 65%;
+    background-position: calc(50% - 50px) 65%;
     /* background-size: 300%; */
   }
-
+}
+@media screen and (max-width: 800px) and (orientation: portrait) {
   section.banner .old-form {
     left: 0;
     right: 0;
