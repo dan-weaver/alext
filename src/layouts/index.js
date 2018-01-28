@@ -223,6 +223,7 @@ export default class Template extends React.Component {
             </nav>
           </header>
           <header className="mobile">
+            <Link to={"/"} className="logo-white" />
             <ul className="nav">
               <li>
                 <Link to="/#involved">Get Involved</Link>

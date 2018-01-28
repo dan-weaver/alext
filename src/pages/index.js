@@ -3,10 +3,17 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import $ from "jquery";
 import ReactDOM from "react-dom";
-
+import YouTube from "react-youtube";
 var quickSignup, getInvolved;
+import Modal from "react-modal";
 
 export default class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoOpen: true
+    };
+  }
   componentDidMount() {
     console.log("before register quicksignup");
     var that = this;
@@ -52,19 +59,102 @@ export default class Index extends React.Component {
             <div className="wpcf7" id="wpcf7-f90-o1" lang="en-US" dir="ltr">
               <div className="screen-reader-response" />
               <div className="old-form wpcf7-form">
-                <div className="image" />
-                <div className="ngp-signup-display" />
+                <div
+                  onClick={() => this.setState({ videoOpen: true })}
+                  className="image"
+                />
+                <div className="video-thumb" />
+                <div className="ngp-signup-display desktop-signup" />
               </div>
             </div>
           </div>
-          <div
-            className="arrow"
-            style={{ position: "absolute", bottom: 5, zIndex: 500 }}
-          />
+          <Modal
+            style={{
+              overlay: {
+                zIndex: 50000000000000000,
+                position: "fixed",
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: "rgba(0, 0, 0, 0.75)"
+              },
+              content: {
+                position: "static",
+                background: "transparent",
+                bottom: null,
+                left: null,
+                right: null,
+                width: "581px",
+                margin: "150px auto",
+                border: "none",
+                WebkitOverflowScrolling: "touch",
+                borderRadius: "4px",
+                outline: "none",
+                padding: "20px"
+              }
+            }}
+            onRequestClose={() => this.setState({ videoOpen: false })}
+            isOpen={this.state.videoOpen}
+            contentLabel="Modal"
+          >
+            <div style={{ position: "fixed", top: 0, right: 24 }}>
+              <a
+                onClick={() => this.setState({ videoOpen: false })}
+                style={{
+                  cursor: "pointer",
+                  display: "block",
+                  height: 44,
+                  width: 44,
+                  padding: 10,
+                  backgroundColor: "rgba(30,30,30,.6)"
+                }}
+              >
+                <svg
+                  style={{
+                    color: "#ccc",
+                    fill: "#ccc",
+                    stroke: "#ccc",
+                    strokeLinejoin: "round",
+                    strokeWidth: 3
+                  }}
+                  viewBox="0 0 40 40"
+                >
+                  <path d="M10,10 L30,30 M30,10 L10,30" />
+                </svg>
+              </a>
+            </div>
+            <div
+              onClick={() => this.setState({ videoOpen: false })}
+              className="video-container"
+            >
+              <YouTube
+                videoId="9r0iJJnJXSM"
+                onEnd={() => this.setState({ videoOpen: false })}
+                opts={{
+                  width: 581,
+                  height: 327,
+                  playerVars: { autoplay: 1, rel: 0 }
+                }}
+              />
+            </div>
+          </Modal>
           <div className="gradient" />
         </section>
 
         <section className="declaration">
+          <div className="container mobile-signup">
+            <div className="wpcf7" id="wpcf7-f90-o1" lang="en-US" dir="ltr">
+              <div className="screen-reader-response" />
+              <div className="old-form wpcf7-form">
+                <div
+                  onClick={() => this.setState({ videoOpen: true })}
+                  className="image"
+                />
+                <div className="ngp-signup-display" />
+              </div>
+            </div>
+          </div>
           <div className="container">
             <p>
               I'm running for Congress to fight to take our country back from

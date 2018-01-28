@@ -286,6 +286,17 @@ header.default .logo-white {
   transition: all 0.3s;
 }
 
+header.mobile .logo-white {
+  display: block;
+  width: 75px;
+  height: 32px;
+  content: url("../images/logo-small-white.svg");
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: all 0.3s;
+}
+
 header.default .logo-white-small {
   display: block;
   width: 257px;
@@ -661,9 +672,26 @@ section.banner .old-form .image {
   max-width: 307px;
   height: 0;
   padding-bottom: 42%;
-  background: url("../images/alex-logo2.png") no-repeat center;
+  background: url("../images/video-thumb.png") no-repeat center;
+  position: relative;
+  cursor: pointer;
   background-size: contain;
   margin: 0 auto 30px;
+}
+section.banner .old-form .image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  float: left;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: url(../images/icon-play-01.png) no-repeat center center;
+  background-size: 75px auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 section.banner .old-form input[type="submit"] {
@@ -1362,8 +1390,20 @@ textarea.error {
 /*================================================================================
 Media Queries
 ================================================================================*/
+.desktop-signup {
+  display: block;
+}
+.mobile-signup {
+  display: none;
+}
 @media screen and (max-width: 980px) {
   .default .nav .contribute {
+    display: none;
+  }
+  .mobile-signup {
+    display: block;
+  }
+  .desktop-signup {
     display: none;
   }
 }
