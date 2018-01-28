@@ -85,7 +85,8 @@ export default class Index extends React.Component {
                 bottom: null,
                 left: null,
                 right: null,
-                width: "581px",
+                width: "100%",
+                maxWidth: 600,
                 margin: "150px auto",
                 border: "none",
                 WebkitOverflowScrolling: "touch",
@@ -132,7 +133,7 @@ export default class Index extends React.Component {
                 videoId="9r0iJJnJXSM"
                 onEnd={() => this.setState({ videoOpen: false })}
                 opts={{
-                  width: 581,
+                  width: "100%",
                   height: 327,
                   playerVars: { autoplay: 1, rel: 0 }
                 }}
