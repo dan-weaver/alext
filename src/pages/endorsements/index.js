@@ -154,6 +154,9 @@ export default class Endorsements extends React.Component {
                   </div>
                 </li>
                 <li>
+                  <h3>UFCW Local 455</h3>
+                </li>
+                <li>
                   <h3>Harris County Tejano Democrats</h3>
                 </li>
                 <li>
