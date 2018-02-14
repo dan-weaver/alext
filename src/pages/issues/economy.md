@@ -5,7 +5,6 @@ path: economy
 buttonTitle: Economy
 subtitle: Building an economy that works for everyone
 type: issue
-cardType: horizontal
 ---
 
 ## Building an economy that works for everyone

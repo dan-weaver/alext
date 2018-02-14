@@ -63,7 +63,6 @@ export default class Index extends React.Component {
                   onClick={() => this.setState({ videoOpen: true })}
                   className="image"
                 />
-                <div className="video-thumb" />
                 <div className="ngp-signup-display desktop-signup" />
               </div>
             </div>
@@ -130,7 +129,7 @@ export default class Index extends React.Component {
               className="video-container"
             >
               <YouTube
-                videoId="9r0iJJnJXSM"
+                videoId="ltaDoGPdXWQ"
                 onEnd={() => this.setState({ videoOpen: false })}
                 opts={{
                   width: "100%",
@@ -152,7 +151,6 @@ export default class Index extends React.Component {
                   onClick={() => this.setState({ videoOpen: true })}
                   className="image"
                 />
-                <div className="ngp-signup-display" />
               </div>
             </div>
           </div>

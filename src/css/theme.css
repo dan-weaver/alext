@@ -288,7 +288,7 @@ header.default .logo-white {
 
 header.mobile .logo-white {
   display: block;
-  width: 75px;
+  width: 55px;
   height: 32px;
   content: url("../images/logo-small-white.svg");
   position: absolute;
@@ -461,7 +461,7 @@ header.mobile ul.nav {
   /* Tom modify 20170721*/
   /*left: 8px;*/
   /*left: calc( (100% - 330px)/2 );*/
-  left: calc( (100% - 277px)/2);
+  left: calc( (100% - 200px)/2);
   /* Tom modify 20170721*/
 
   top: 18px;
@@ -655,7 +655,7 @@ section.banner .old-form {
   margin: 0 auto;
   padding: 0 15px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
   z-index: 2;
   transform: translateY(-50%);
@@ -667,31 +667,50 @@ section.banner .old-form {
   /* Tom modify 20170710 */
 }
 
+.thumb-text {
+  position: absolute;
+  top: -10px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .thumb-text {
+    top: -15px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section.banner .old-form .image:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    float: left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: url(../images/play-icon.png) no-repeat center center;
+    background-size: 75px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 section.banner .old-form .image {
   width: 100%;
-  max-width: 307px;
+  max-width: 400px;
   height: 0;
-  padding-bottom: 42%;
-  background: url("../images/video-thumb.png") no-repeat center;
+  padding-bottom: 40%;
+  background: url("../images/video-thumb2.png") no-repeat center;
   position: relative;
   cursor: pointer;
   background-size: contain;
   margin: 0 auto 30px;
-}
-section.banner .old-form .image:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  float: left;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background: url(../images/icon-play-01.png) no-repeat center center;
-  background-size: 75px auto;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 section.banner .old-form input[type="submit"] {
@@ -1400,12 +1419,12 @@ Media Queries
   .default .nav .contribute {
     display: none;
   }
-  .mobile-signup {
+  /* .mobile-signup {
     display: block;
   }
   .desktop-signup {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
@@ -1484,7 +1503,7 @@ header.default .tagline {
     --------------------------------------------------*/
   section.banner,
   section.banner .container {
-    height: 350px;
+    height: calc(100vh - 60px);
   }
 
   section.banner {
@@ -1496,7 +1515,7 @@ header.default .tagline {
   section.banner .old-form .image {
     max-width: 190px;
     padding-bottom: 26%;
-    background: url("../images/video-thumb.png") no-repeat center !important;
+    background: url("../images/alex-logo2.png") no-repeat 50% !important;
     background-size: contain !important;
   }
 
@@ -1590,11 +1609,15 @@ header.default .tagline {
 
 @media screen and (max-width: 375px) and (orientation: portrait) {
   section.banner {
-    background-position: calc(50% - 50px) 65%;
+    background-position: calc(50% - 120px) 65%;
     /* background-size: 300%; */
   }
 }
 @media screen and (max-width: 800px) and (orientation: portrait) {
+  section.banner {
+    background-position: calc(50% - 120px) 65%;
+    /* background-size: 300%; */
+  }
   section.banner .old-form {
     left: 0;
     right: 0;

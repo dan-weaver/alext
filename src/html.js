@@ -31,7 +31,6 @@ var ngpScriptContent = `function Ngp(win) {
 
   postRenderCallbacks.push(
     function(args) {
-      console.log('postRender', formLookUp[args.form_definition.title], args.form_definition.title);
       var currentFormState = formLookUp[args.form_definition.title] || makeFormState(name);
       formLookUp[args.form_definition.title] = currentFormState;
       if (currentFormState.callback) {
@@ -59,7 +58,7 @@ var ngpScriptContent = `function Ngp(win) {
   }
 };
 window.NgpForms = Ngp(window);
-`
+`;
 
 export default class HTML extends React.Component {
   static propTypes = {
@@ -161,11 +160,12 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{
               __html: ngpScriptContent
             }}
-            />
+          />
         </head>
         <body>
           <div
-            dangerouslySetInnerHTML={{__html:`
+            dangerouslySetInnerHTML={{
+              __html: `
               <div style="display:none;" class="ngp-signup-holder">
                 <div
                   class="ngp-form quick-signup ngp-signup-form"
@@ -184,8 +184,9 @@ export default class HTML extends React.Component {
                   >
                 </div>
             </div>
-            `}}
-            />
+            `
+            }}
+          />
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
