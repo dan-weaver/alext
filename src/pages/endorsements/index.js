@@ -28,7 +28,7 @@ export default class Endorsements extends React.Component {
                   Alex's experience building bridges in our community, paired
                   with his business experience, prepare him well to represent
                   Texas's 7th district in Congress. Houstonians are hardworking,
-                  entrepreneurial, and optimistic &#8212; Alex embodies those
+                  entrepreneurial, and optimistic &mdash; Alex embodies those
                   qualities and will be a strong and responsive representative
                   of Houston in Congress. I'm proud to endorse Alex because I
                   know he will champion the issues I fought for here in Texas:
@@ -59,14 +59,14 @@ export default class Endorsements extends React.Component {
             <div className="pa2 mb3">
               <h2 className="mb2">Houston City Council Member Mike Laster:</h2>
               <p>
-                “Alex Triantaphyllis has an impressive track record of service
+                "Alex Triantaphyllis has an impressive track record of service
                 to the Houston community. His dedication in the communities of
                 southwest Houston makes him an effective advocate who can
                 deliver real results for Houstonians in Congress. The area I
                 represent is one of the most diverse areas in America--we need a
                 representative in Congress who will advocate for everyone in
                 this community. We can trust Alex to stand up to honor our best
-                values and give a voice to all Houstonians.”
+                values and give a voice to all Houstonians."
               </p>
             </div>
             <div className="pa2 mb3">
@@ -173,7 +173,7 @@ export default class Endorsements extends React.Component {
                 <li>Nory Angel, Nonprofit executive</li>
                 <li>Ann Barnes, Doctor and health advocate</li>
                 <li>Matt Barnes, Education advocate</li>
-                <li>Adeeb Barqawi, President & CEO  &#8212; ProUnitas, Inc.</li>
+                <li>Adeeb Barqawi, President & CEO  &mdash; ProUnitas, Inc.</li>
                 <li>Joseph Batdorf, Local business owner</li>
                 <li>Jill Campbell, Immigration attorney</li>
                 <li>Andrea Caracostis, Community health advocate</li>
@@ -207,7 +207,7 @@ export default class Endorsements extends React.Component {
                 </li>
                 <li>Cary Kottler, Renewable energy executive</li>
                 <li>Meredith Kottler, Educator and refugee advocate</li>
-                <li>Brenda Kirk, CEO  &#8212; Vision Weavers Consulting</li>
+                <li>Brenda Kirk, CEO  &mdash; Vision Weavers Consulting</li>
                 <li>
                   Stan Marek, Business leader and immigration reform advocate
                 </li>
@@ -238,7 +238,6 @@ export default class Endorsements extends React.Component {
                 <li>Kate Vickery, Nonprofit leader</li>
                 <li>Lauren West, Refugee advocate</li>
                 <li>Gislaine Williams, Community organizer</li>
-                <li>Navid Zanjani, Democratic activist and business owner</li>
               </ul>
             </div>
           </div>
