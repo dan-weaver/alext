@@ -176,7 +176,7 @@ export default class Endorsements extends React.Component {
                 <li>Nory Angel, Nonprofit executive</li>
                 <li>Ann Barnes, Doctor and health advocate</li>
                 <li>Matt Barnes, Education advocate</li>
-                <li>Adeeb Barqawi, President & CEO  - ProUnitas, Inc.</li>
+                <li>Adeeb Barqawi, President & CEO -- ProUnitas, Inc.</li>
                 <li>Joseph Batdorf, Local business owner</li>
                 <li>Jill Campbell, Immigration attorney</li>
                 <li>Andrea Caracostis, Community health advocate</li>
@@ -186,12 +186,15 @@ export default class Endorsements extends React.Component {
                 <li>Edgar Colon, Attorney</li>
                 <li>Long Chu, Community advocate</li>
                 <li>John Cypher, International business advocate</li>
+                <li>Abdul Dawood, Business leader</li>
+                <li>Lorraine Decker, Financial educator </li>
                 <li>Ali Donnelly, Refugee advocate</li>
                 <li>Frank Donnelly, Responsible development advocate</li>
                 <li>Gayle Fallon, Educator and labor advocate</li>
                 <li>Dr. Fourough Farizani, Community health advocate</li>
                 <li>Charles Foster, Immigration attorney</li>
                 <li>Willa Friedman, Community advocate</li>
+                <li>Lance Gilliam, Business leader</li>
                 <li>Ginny Goldman, Organizer and strategist</li>
                 <li>Estella Gonzalez, Small business advocate</li>
                 <li>
@@ -200,17 +203,20 @@ export default class Endorsements extends React.Component {
                 <li>Vishal Goradia, Business leader</li>
                 <li>Meghna Goswami, Community advocate</li>
                 <li>Andrea Guttin, Immigration attorney</li>
+                <li>Fatima Hassan Ali, Attorney </li>
                 <li>Laura Hines, Business leader</li>
                 <li>Robin Holzer, Transportation advocate</li>
                 <li>Jonathan Howard, Civic leader</li>
                 <li>Glenda Joe, Texan cultures communications advocacy</li>
+                <li>Abbie Kamin, Attorney and community advocate</li>
                 <li>
                   Sara Kauffman, LMSW, Social worker and advocate for new
                   Americans
                 </li>
                 <li>Cary Kottler, Renewable energy executive</li>
                 <li>Meredith Kottler, Educator and refugee advocate</li>
-                <li>Brenda Kirk, CEO  - Vision Weavers Consulting</li>
+                <li>Brenda Kirk, CEO--Vision Weavers Consulting</li>
+                <li>James Llamas, Transportation advocate </li>
                 <li>
                   Stan Marek, Business leader and immigration reform advocate
                 </li>
@@ -219,19 +225,24 @@ export default class Endorsements extends React.Component {
                 <li>
                   Anandrea Molina, Transgender and immigrant rights activist
                 </li>
+                <li>Sean Murphy, Civic leader</li>
                 <li>Molly Duson Naylor, Health advocate</li>
                 <li>Christopher Newport, Civic leader</li>
+                <li>Michael Norton, Education advocate</li>
                 <li>Claudia Ortega-Hogue, Community advocate</li>
                 <li>Kathleen Ownby, Community advocate</li>
+                <li>Adrian Ozuna, Sharpstown community activist </li>
                 <li>Laura Perez-Boston, Economic justice organizer</li>
                 <li>Beverly Postl, Community volunteer</li>
                 <li>Jim Postl, Business leader</li>
                 <li>George Postolos, Business leader</li>
+                <li>Ruby Powers, Immigration attorney</li>
                 <li>Megan Schneider, Education advocate</li>
                 <li>
                   Cathryn & Doug Selman, Philanthropists and education advocates
                 </li>
                 <li>Michael Sklar, Technology advocate</li>
+                <li>Lenora Sorola-Pohlman, Business leader</li>
                 <li>Dr. Hamid Razavi, Community health leader</li>
                 <li>
                   Dr. Assata Richards, Social justice and housing advocate
@@ -240,6 +251,7 @@ export default class Endorsements extends React.Component {
                 <li>Celia & Larry Veselka, Democratic activists</li>
                 <li>Kate Vickery, Nonprofit leader</li>
                 <li>Lauren West, Refugee advocate</li>
+                <li>Reid Whitaker, Educational Entrepreneur and Advocate</li>
                 <li>Gislaine Williams, Community organizer</li>
               </ul>
             </div>
